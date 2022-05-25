@@ -1,10 +1,10 @@
+package courses;
 import java.util.ArrayList;
-
-import Gateways.EmailGateway;
-import Messages.TaskAddedEmailMessage;
-import Users.Professor;
-import Users.Student;
-import Users.TA;
+import gateways.EmailGateway;
+import messages.TaskAddedEmailMessage;
+import users.Professor;
+import users.Student;
+import users.TA;
 
 public class Course {
 	
@@ -84,7 +84,7 @@ public class Course {
 	
 	
 	
-	public void AddAssignment(String assignName, String assignBody) {
+	public void addAssignment(String assignName, String assignBody) {
 		announcements.add(assignName);
 		String[] placeholders = new String[] {assignName, assignBody};
 		// do some logic here 
@@ -119,8 +119,4 @@ public class Course {
 			emailGateway.sendMessage(notification, student.getEmail());
 		}
 	}
-	
-	
-	
-	
 }
