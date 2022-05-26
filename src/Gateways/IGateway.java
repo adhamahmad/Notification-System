@@ -1,6 +1,6 @@
 package gateways;
 
-intrface IGateway {
+public interface IGateway {
 
     void sendMessage(Object message, String user, String contents);
 

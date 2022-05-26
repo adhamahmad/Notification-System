@@ -13,7 +13,7 @@ public class CoursePublisher
         subscribers.put(gateWay, postType);
     }
 
-    public void notify(String postType,IMessage message,  user, String contents)
+    public void notify(String postType,IMessage message,  String user, String contents)
     {
         for (Map.Entry<IGateway, String> entry : subscribers.entrySet()) {
             ((IGateway) entry).sendMessage(message,user,contents);
