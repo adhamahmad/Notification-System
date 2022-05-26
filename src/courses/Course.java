@@ -4,14 +4,14 @@ import java.util.ArrayList;
 import users.User;
 
 public class Course {
-	CoursePublisher coursePublisher;
+	public CoursePublisher coursePublisher;
 	String name;
 	String code;
 	ArrayList<String> announcements;
 	ArrayList<String> exams;
 	ArrayList<String> grades;
 	ArrayList<String> assignments; // added
-	ArrayList<User> usersForNotifications;
+	
 
 	public Course(String name, String code) {
 		super();
@@ -22,8 +22,8 @@ public class Course {
 		exams = new ArrayList<String>();
 		grades = new ArrayList<String>();
 		assignments = new ArrayList<String>();
+	
 	}
-
 	public String getName() {
 		return name;
 	}
@@ -44,7 +44,9 @@ public class Course {
 		assignments.add(assignName);
 		assignments.add(assignBody);
 		String content = assignName + assignBody;
-		coursePublisher.notify(IMessage message,,content);
+		String msgtype = "Assignment";
+		coursePublisher.getCourse(this);
+		coursePublisher.notify(msgtype, content,content);
 	}
 
 	public void addExam(String examName, String examBody) {
