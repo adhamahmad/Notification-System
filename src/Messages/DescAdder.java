@@ -1,5 +1,6 @@
+package messages;
 public abstract class DescAdder{
-    public void addTeamDescription(){
+    public static void addTeamDescription(){
         System.out.println("Team description added");
     }
 }
