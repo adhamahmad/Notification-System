@@ -1,14 +1,10 @@
 package messages;
 
-public class TaskAddedMobileMessage {
+public class TaskAddedMobileMessage implements IMessage{
 
 	public String prepareMessage(String placeHolders[]) {
-		// code to replace place holders of this type
-		return "";
-	}
-	
-	
-	public void addTeamDescription() {
-		
+		addTeamDescription();
+		placeHolders[0] = "Today's task on SMS";
+		return placeHolders[0];
 	}
 }

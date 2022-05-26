@@ -1,15 +1,10 @@
 package messages;
 
-public class TaskAddedEmailMessage {
+public class TaskAddedEmailMessage implements IMessage{
 
 	public String prepareMessage(String placeHolders[]) {
-		// code to replace place holders of this type
-		
-		return "";
-	}
-	
-	
-	public void addTeamDescription() {
-		
+		addTeamDescription();
+		placeHolders[0] = "Today's task on Email";
+		return placeHolders[0];
 	}
 }
