@@ -1,9 +1,9 @@
 package messages;
 
-public class DailyNewsMobileMessage {
-	
+public class DailyNewsMobileMessage implements IMessage{
+
 	public String prepareMessage(String placeHolders[]) {
-		// code to replace place holders of this type
-		return "";
+		placeHolders[0] = "Today's news on SMS";
+		return placeHolders[0];
 	}
 }

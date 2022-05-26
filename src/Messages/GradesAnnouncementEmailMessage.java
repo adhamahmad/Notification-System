@@ -1,15 +1,10 @@
 package messages;
 
-public class GradesAnnouncementEmailMessage {
+public class GradesAnnouncementEmailMessage implements IMessage{
 
 	public String prepareMessage(String placeHolders[]) {
-		// code to replace place holders of this type
-		return "";
-	}
-	
-	public boolean verifyGrades() {
-		// code to verify Grades before announcement
-		
-		return true;
+		verifyGrades();
+		placeHolders[0] = "Gardes on Email";
+		return placeHolders[0];
 	}
 }

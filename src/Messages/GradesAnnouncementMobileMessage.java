@@ -1,15 +1,10 @@
 package messages;
 
-public class GradesAnnouncementMobileMessage {
+public class GradesAnnouncementMobileMessage implements IMessage{
 
 	public String prepareMessage(String placeHolders[]) {
-		// code to replace place holders of this type
-		return "";
-	}
-	
-	public boolean verifyGrades() {
-		// code to verify Grades before announcement
-		
-		return true;
+		verifyGrades();
+		placeHolders[0] = "Grades on SMS";
+		return placeHolders[0];
 	}
 }
