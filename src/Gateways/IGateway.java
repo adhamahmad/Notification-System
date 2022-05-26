@@ -1,7 +1,9 @@
 package gateways;
 
+import messages.*;
+
 public interface IGateway {
 
-    void sendMessage(Object message, String user, String contents);
+    void sendMessage(IMessage message, String user, String contents);
 
 }

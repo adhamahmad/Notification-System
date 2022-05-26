@@ -1,5 +1,6 @@
+package messages;
 public abstract class GradeVerifier {
-    public boolean verifyGrades(){
+    public static boolean verifyGrades(){
         return true;
     }
 }

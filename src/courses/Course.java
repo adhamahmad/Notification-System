@@ -1,6 +1,8 @@
 package courses;
 import java.util.ArrayList;
 
+import users.User;
+
 public class Course {
 	CoursePublisher coursePublisher;
 	String name;
@@ -9,6 +11,7 @@ public class Course {
 	ArrayList<String> exams;
 	ArrayList<String> grades;
 	ArrayList<String> assignments; // added
+	ArrayList<User> usersForNotifications;
 
 	public Course(String name, String code) {
 		super();
@@ -41,7 +44,7 @@ public class Course {
 		assignments.add(assignName);
 		assignments.add(assignBody);
 		String content = assignName + assignBody;
-		coursePublisher.notify( ,content);
+		coursePublisher.notify(IMessage message,,content);
 	}
 
 	public void addExam(String examName, String examBody) {
