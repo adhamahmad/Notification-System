@@ -1,29 +1,19 @@
 package courses;
 import java.util.ArrayList;
 
+import messages.IMessage;
 import users.User;
 
 public class Course {
 	public CoursePublisher coursePublisher;
 	String name;
 	String code;
+	IMessage message;
 	ArrayList<String> announcements;
-	ArrayList<String> exams;
+	ArrayList<String> tasks;
 	ArrayList<String> grades;
-	ArrayList<String> assignments; // added
-	
 
-	public Course(String name, String code) {
-		super();
-		this.name = name;
-		this.code = code;
-		
-		announcements = new ArrayList<String>();
-		exams = new ArrayList<String>();
-		grades = new ArrayList<String>();
-		assignments = new ArrayList<String>();
 	
-	}
 	public String getName() {
 		return name;
 	}
@@ -40,28 +30,27 @@ public class Course {
 		this.code = code;
 	}
 
-	public void addAssignment(String assignName, String assignBody) {
-		assignments.add(assignName);
-		assignments.add(assignBody);
-		String content = assignName + assignBody;
-		String msgtype = "Assignment";
-		coursePublisher.getCourse(this);
-		coursePublisher.notify(msgtype, content,content);
-	}
-
-	public void addExam(String examName, String examBody) {
-		exams.add(examName);
-		exams.add(examBody);
+	public void addTask(String examName, String examBody) {
+		tasks.add(examName);
+		tasks.add(examBody);
+		message = new taskMessage();
+		message.setContent(examName+examBody);
+		coursePublisher.notify(message);
 	}
 
 	public void postGrades(String gradedItem, String gradeValue) {
 		grades.add(gradedItem);
 		grades.add(gradeValue);
+		message = new gradesMessage();
+		message.setContent(gradedItem+gradeValue);
+		coursePublisher.notify(message);
 	}
 
 	public void postAnnouncement(String announcementContent) {
 		announcements.add(announcementContent);
-
+		message = new announcementMessage();
+		message.setContent(announcementContent);
+		coursePublisher.notify(message);
 	}
 
 
