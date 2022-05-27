@@ -13,7 +13,11 @@ public class Course {
 	ArrayList<String> tasks;
 	ArrayList<String> grades;
 
-	
+	public CoursePublisher getCoursePublisher() 
+	{
+		return coursePublisher;
+	}
+
 	public String getName() {
 		return name;
 	}
