@@ -37,57 +37,11 @@ public class CoursePublisher
         this.course = course;
     }
 
-    public void notify(String postType, String user, String contents)
+    public void notify(IMessage message)
     {   // 3rf no3 el message 
         // hget el user for notification
-        IMessage message;
-        IGateway mail = new EmailGateway();
         for (Map.Entry<IGateway, User> entry : subscribers.entrySet()) {
-            for(int i =0;i< entry.getValue().getEnrolledCourses().size();i++){
-                
-                if( entry.getValue().getEnrolledCourses().get(i) == course){
-                    IGateway x = entry.getKey();
-                    if(postType =="Annoucment"){
-                        if(x == mail)
-                        {
-                            message = new DailyNewsEmailMessage();
-                            x.sendMessage(message, entry.getValue(), contents);
-                        }
-                        else{
-                            message = new DailyNewsMobileMessage();
-                            x.sendMessage(message, entry.getValue(), contents)
-                        }
-                    }
-                    else if(postType =="Task"){
-                        if(x == mail)
-                        {
-                            message = new TaskAddedEmailMessage();
-                            x.sendMessage(message, entry.getValue(), contents);
-                        }
-                        else{
-                            message = new TaskAddedMobileMessage();
-                            x.sendMessage(message, entry.getValue(), contents)
-                        }
-
-                    }
-                    else if(postType =="Grades"){
-                        if(x == mail)
-                        {
-                            message = new GradesAnnouncementEmailMessage();
-                            x.sendMessage(message, entry.getValue(), contents);
-                        }
-                        else{
-                            message = new GradesAnnouncementMobileMessage();
-                            x.sendMessage(message, entry.getValue(), contents)
-                        }
-
-                    }
-                }
-                
-            }
-            // IGateway x = entry.getKey();
-            // hshof fe el course lw la
-            //((IGateway) entry).sendMessage(message,user,contents);
+            entry.getKey().sendMessage(entry.getValue(),message);
         }
     }
 }
