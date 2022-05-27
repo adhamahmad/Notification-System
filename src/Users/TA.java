@@ -1,6 +1,6 @@
 package users;
 
-public class TA {
+public class TA extends User{
 	String department;
 
 	public TA(String department) {
