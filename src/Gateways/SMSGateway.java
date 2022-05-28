@@ -7,8 +7,8 @@ public class SMSGateway implements IGateway{
 
     @Override
     public void sendMessage(User recepient, Message message) {
-        String[] placeHolders = new String[] {};
-        placeHolders[0] = "this is a email message";
+        String[] placeHolders = new String[] {"", "", "", "", ""};
+        placeHolders[0] = "This is a SMS message";
         message.prepareMessage(placeHolders);
         recepient.update(message);
     }

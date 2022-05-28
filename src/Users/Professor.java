@@ -1,15 +1,16 @@
 package users;
 
-import java.sql.Date;
+import java.util.ArrayList;
+
 import courses.Course;
 
 public class Professor extends User{
 	String department;
-	Date hirringDate;
+	String hirringDate;
 	String PhDTopic;
-	Course coursesInCharge[]  = new Course[10];	
+	ArrayList<Course> coursesInCharge  = new ArrayList<Course>();
 	
-	public Professor( String department, Date hirringDate, String phDTopic) {
+	public Professor(String department, String hirringDate, String phDTopic) {
 		super();
 		this.department = department;
 		this.hirringDate = hirringDate;
@@ -22,10 +23,10 @@ public class Professor extends User{
 	public void setDepartment(String department) {
 		this.department = department;
 	}
-	public Date getHirringDate() {
+	public String getHirringDate() {
 		return hirringDate;
 	}
-	public void setHirringDate(Date hirringDate) {
+	public void setHirringDate(String hirringDate) {
 		this.hirringDate = hirringDate;
 	}
 	public String getPhDTopic() {
@@ -33,5 +34,21 @@ public class Professor extends User{
 	}
 	public void setPhDTopic(String phDTopic) {
 		PhDTopic = phDTopic;
-	}	
+	}
+
+	public void setCoursesInCharge(Course inCharge){
+		coursesInCharge.add(inCharge);
+	}
+
+	public void pushTask(Course course, ArrayList<String> message){
+		course.addTask(message);
+	}
+
+	public void pushGrades(Course course, ArrayList<String> message){
+		course.postGrades(message);
+	}
+
+	public void pushaAnnouncement(Course course, ArrayList<String> message){
+		course.postAnnouncement(message);
+	}
 }
