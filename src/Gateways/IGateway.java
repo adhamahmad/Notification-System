@@ -4,6 +4,6 @@ import messages.*;
 
 public interface IGateway {
 
-    void sendMessage(IMessage message, String user, String contents);
+    public void sendMessage(User recepient, Message message);
 
 }
