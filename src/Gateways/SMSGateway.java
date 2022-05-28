@@ -8,10 +8,10 @@ import messages.TaskAddedMobileMessage;
 public class SMSGateway implements IGateway{
 
 	@Override
-	public void sendMessage(IMessage message, String user, String contents) {
-		// TODO Auto-generated method stub
+	public void sendMessage(User recepient, Message message) {
 		String[] placeHolders = new String[] {};
+		placeHolders[0] = "this is a email message";
 		message.prepareMessage(placeHolders);
-		contents = placeHolders[0] + " " + contents;
+		recepient.update(message);
 	}
 }
