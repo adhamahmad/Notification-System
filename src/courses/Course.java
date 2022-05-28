@@ -1,17 +1,19 @@
 package courses;
 import java.util.ArrayList;
 
-import messages.IMessage;
-import users.User;
+import messages.taskMessage;
+import messages.Message;
+import messages.announcmentMessage;
+import messages.gradeMessage;
 
 public class Course {
 	public CoursePublisher coursePublisher;
 	String name;
 	String code;
-	IMessage message;
-	ArrayList<String[]> announcements;
-	ArrayList<String[]> tasks;
-	ArrayList<String[]> grades;
+	Message message;
+	ArrayList<ArrayList <String>> announcements;
+	ArrayList<ArrayList <String>> tasks;
+	ArrayList<ArrayList <String>> grades;
 
 	public CoursePublisher getCoursePublisher() 
 	{
@@ -34,24 +36,24 @@ public class Course {
 		this.code = code;
 	}
 
-	public void addTask(String[] task) {
+	public void addTask(ArrayList<String> task) {
 		tasks.add(task);
 		message = new taskMessage();
-		message.setContent(task);
+		message.setMessageContent(task);
 		coursePublisher.notify(message);
 	}
 
-	public void postGrades(String[] grade) {
+	public void postGrades(ArrayList<String> grade) {
 		grades.add(grade);
-		message = new gradesMessage();
-		message.setContent(grade);
+		message = new gradeMessage();
+		message.setMessageContent(grade);
 		coursePublisher.notify(message);
 	}
 
-	public void postAnnouncement(String [] announcement) {
+	public void postAnnouncement(ArrayList<String> announcement) {
 		announcements.add(announcement);
-		message = new announcementMessage();
-		message.setContent(announcement);
+		message = new announcmentMessage();
+		message.setMessageContent(announcement);
 		coursePublisher.notify(message);
 	}
 

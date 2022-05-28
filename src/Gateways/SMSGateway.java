@@ -1,9 +1,7 @@
 package gateways;
 
-import messages.DailyNewsMobileMessage;
-import messages.GradesAnnouncementMobileMessage;
-import messages.IMessage;
-import messages.TaskAddedMobileMessage;
+import messages.Message;
+import users.User;
 
 public class SMSGateway implements IGateway{
 

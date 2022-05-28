@@ -1,9 +1,7 @@
 package gateways;
 
-import messages.DailyNewsEmailMessage;
-import messages.GradesAnnouncementEmailMessage;
-import messages.IMessage;
-import messages.TaskAddedEmailMessage;
+import messages.Message;
+import users.User;
 
 public class EmailGateway implements IGateway{
 

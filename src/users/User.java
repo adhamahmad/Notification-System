@@ -1,7 +1,12 @@
 package users;
+<<<<<<< Updated upstream
 import java.util.ArrayList;
 
 import courses.*;
+=======
+import courses.Course;
+import messages.Message;
+>>>>>>> Stashed changes
 
 
 public class User {
@@ -48,6 +53,7 @@ public class User {
 	public void setName(String name) {
 		this.name = name;
 	}
+<<<<<<< Updated upstream
 	
 	public void getNotified(String msgType,Course course) {
 		enrolledCourses.add(course);
@@ -64,8 +70,19 @@ public class User {
 	
     public void update(String message) {
 		System.out.println(getName() + ": " +message);
+=======
+
+	public void enlistInCourse(String messageType, Course course){
+		course.getCoursePublisher().subscribe(messageType,this);
+>>>>>>> Stashed changes
 	}
 
 
 	
+<<<<<<< Updated upstream
+=======
+    public void update(Message message) {
+		System.out.println(getName() + ": received:" +message.getMessageContent());
+	}	
+>>>>>>> Stashed changes
 }
