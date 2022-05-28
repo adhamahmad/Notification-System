@@ -7,13 +7,13 @@ import messages.GradeMessage;
 import messages.TaskMessage;
 
 public class Course {
-	public CoursePublisher coursePublisher;
+	public CoursePublisher coursePublisher = new CoursePublisher();
 	String name;
 	String code;
 	Message message;
-	ArrayList<ArrayList<String>> announcements;
-	ArrayList<ArrayList<String>> tasks;
-	ArrayList<ArrayList<String>> grades;
+	ArrayList<ArrayList<String>> announcements = new ArrayList<ArrayList<String>>();
+	ArrayList<ArrayList<String>> tasks = new ArrayList<ArrayList<String>>();;
+	ArrayList<ArrayList<String>> grades = new ArrayList<ArrayList<String>>();;
 
 	public CoursePublisher getCoursePublisher() 
 	{

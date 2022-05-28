@@ -15,9 +15,6 @@ public class User {
     }
 
 	public User() {
-		name = getName();
-		phoneNumber = getPhoneNumber();
-		email = getEmail();
 	}
 
     public String getEmail() {
@@ -44,11 +41,11 @@ public class User {
 		this.name = name;
 	}
 
-	public void enlistInCourse(String messageType, Course course){
-		course.getCoursePublisher().subscribe(messageType, this);
+	public void enlistInCourse(String messageType, Course course, User enlister){
+		course.getCoursePublisher().subscribe(messageType, enlister);
 	}
 	
     public void update(Message message) {
-		System.out.println(getName() + ": received:" +message.getMessageContent());
+		System.out.println(getName() + " received:" +message.getMessageContent());
 	}	
 }

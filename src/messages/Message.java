@@ -10,8 +10,13 @@ public  class Message {
         }
         return messageContent;
     }
-    public ArrayList<String> getMessageContent() {
-        return messageContent;
+    public String getMessageContent() {
+        String message ="";
+        for(String temp : messageContent){
+            message += " "+ temp;
+        }
+        messageContent.clear();
+        return message;
     }
     public void setMessageContent(ArrayList<String> messageContent) {
         this.messageContent = messageContent;

@@ -7,7 +7,6 @@ public class Student extends User{
 	String phoneNumber;	
 	
 	public Student(int id) {
-		super();
 		Id = id;
 	}
 
