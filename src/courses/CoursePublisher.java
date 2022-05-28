@@ -2,14 +2,11 @@ package courses ;
 
 import java.util.HashMap;
 import java.util.Map;
-import gateways.*;
-import messages.DailyNewsEmailMessage;
-import messages.DailyNewsMobileMessage;
-import messages.GradesAnnouncementEmailMessage;
-import messages.GradesAnnouncementMobileMessage;
-import messages.IMessage;
-import messages.TaskAddedEmailMessage;
-import messages.TaskAddedMobileMessage;
+
+import gateways.EmailGateway;
+import gateways.IGateway;
+import gateways.SMSGateway;
+import messages.Message;
 import users.User;
 public class CoursePublisher 
 {
@@ -37,7 +34,7 @@ public class CoursePublisher
         this.course = course;
     }
 
-    public void notify(IMessage message)
+    public void notify(Message message)
     {   // 3rf no3 el message 
         // hget el user for notification
         for (Map.Entry<IGateway, User> entry : subscribers.entrySet()) {

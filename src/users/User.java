@@ -1,6 +1,6 @@
 package users;
-import java.util.ArrayList;
 import courses.Course;
+import messages.Message;
 
 
 public class User {
@@ -45,10 +45,10 @@ public class User {
 	}
 
 	public void enlistInCourse(String messageType, Course course){
-		course.getCoursePublisher().subscribe(this, messageType);
+		course.getCoursePublisher().subscribe(messageType, this);
 	}
 	
     public void update(Message message) {
-		System.out.println(getName() + ": received:" +message.getContent());
+		System.out.println(getName() + ": received:" +message.getMessageContent());
 	}	
 }

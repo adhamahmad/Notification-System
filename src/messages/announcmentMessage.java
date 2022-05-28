@@ -1,5 +1,5 @@
 package messages;
 
-public class AnnouncementMessage extends Message {
+public class announcmentMessage extends Message {
 
 }

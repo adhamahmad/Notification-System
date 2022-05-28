@@ -1,18 +1,19 @@
 package messages;
 
-public abstract class Message {
-    private String[] message = new String[];
-    public abstract String prepareMessage(String placeHolders[]){
-        for(String temp: placeHolders) {
-        int i = 0;
-        messageContent[messageContent.length]= messageContent[i];
-        messageContent[i] = temp;
+import java.util.ArrayList;
+
+public  class Message {
+    private ArrayList<String> message = new ArrayList<String>();
+    public ArrayList<String> prepareMessage(String placeHolders[]){
+        for(String temp : placeHolders){
+            message.add(temp);
         }
-    }
-    public String[] getMessageContent() {
         return message;
     }
-    public void setMessageContent(String[] messageContent) {
+    public ArrayList<String> getMessageContent() {
+        return message;
+    }
+    public void setMessageContent(ArrayList<String> messageContent) {
         this.message = messageContent;
     }
 }

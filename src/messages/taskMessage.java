@@ -1,4 +1,4 @@
-package message
+package messages;
 public class taskMessage extends Message {
 
     public void addDescription(){

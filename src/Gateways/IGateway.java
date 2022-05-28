@@ -1,6 +1,7 @@
 package gateways;
 
 import messages.*;
+import users.User;
 
 public interface IGateway {
 
