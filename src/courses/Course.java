@@ -9,9 +9,9 @@ public class Course {
 	String name;
 	String code;
 	IMessage message;
-	ArrayList<String> announcements;
-	ArrayList<String> tasks;
-	ArrayList<String> grades;
+	ArrayList<String[]> announcements;
+	ArrayList<String[]> tasks;
+	ArrayList<String[]> grades;
 
 	public CoursePublisher getCoursePublisher() 
 	{
@@ -34,26 +34,24 @@ public class Course {
 		this.code = code;
 	}
 
-	public void addTask(String examName, String examBody) {
-		tasks.add(examName);
-		tasks.add(examBody);
+	public void addTask(String[] task) {
+		tasks.add(task);
 		message = new taskMessage();
-		message.setContent(examName+examBody);
+		message.setContent(task);
 		coursePublisher.notify(message);
 	}
 
-	public void postGrades(String gradedItem, String gradeValue) {
-		grades.add(gradedItem);
-		grades.add(gradeValue);
+	public void postGrades(String[] grade) {
+		grades.add(grade);
 		message = new gradesMessage();
-		message.setContent(gradedItem+gradeValue);
+		message.setContent(grade);
 		coursePublisher.notify(message);
 	}
 
-	public void postAnnouncement(String announcementContent) {
-		announcements.add(announcementContent);
+	public void postAnnouncement(String [] announcement) {
+		announcements.add(announcement);
 		message = new announcementMessage();
-		message.setContent(announcementContent);
+		message.setContent(announcement);
 		coursePublisher.notify(message);
 	}
 
