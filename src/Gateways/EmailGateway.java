@@ -1,19 +1,17 @@
 package gateways;
 
-import messages.DailyNewsEmailMessage;
-import messages.GradesAnnouncementEmailMessage;
-import messages.IMessage;
-import messages.TaskAddedEmailMessage;
+import messages.Message;
+import users.User;
 
 public class EmailGateway implements IGateway{
 
-	@Override
-	public void sendMessage(IMessage message, String user, String contents) {
-		// TODO Auto-generated method stub
-		String[] placeHolders = new String[] {};
-		message.prepareMessage(placeHolders);
-		contents = placeHolders[0] + " " + contents;
-	}
+    @Override
+    public void sendMessage(User recepient, Message message) {
+        String[] placeHolders = new String[] {};
+        placeHolders[0] = "this is a sms messageA";
+        message.prepareMessage(placeHolders);
+        recepient.update(message);
+    }
 
-	
+
 }

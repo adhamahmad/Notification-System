@@ -1,11 +1,13 @@
 package users;
 
 import java.sql.Date;
+import courses.Course;
 
 public class Professor extends User{
 	String department;
 	Date hirringDate;
-	String PhDTopic;	
+	String PhDTopic;
+	Course coursesInCharge[]  = new Course[10];	
 	
 	public Professor( String department, Date hirringDate, String phDTopic) {
 		super();

@@ -1,29 +1,25 @@
 package courses;
 import java.util.ArrayList;
 
-import users.User;
+import messages.Message;
+import messages.AnnouncementMessage;
+import messages.GradeMessage;
+import messages.TaskMessage;
 
 public class Course {
 	public CoursePublisher coursePublisher;
 	String name;
 	String code;
-	ArrayList<String> announcements;
-	ArrayList<String> exams;
-	ArrayList<String> grades;
-	ArrayList<String> assignments; // added
-	
+	Message message;
+	ArrayList<ArrayList<String>> announcements;
+	ArrayList<ArrayList<String>> tasks;
+	ArrayList<ArrayList<String>> grades;
 
-	public Course(String name, String code) {
-		super();
-		this.name = name;
-		this.code = code;
-		
-		announcements = new ArrayList<String>();
-		exams = new ArrayList<String>();
-		grades = new ArrayList<String>();
-		assignments = new ArrayList<String>();
-	
+	public CoursePublisher getCoursePublisher() 
+	{
+		return coursePublisher;
 	}
+
 	public String getName() {
 		return name;
 	}
@@ -40,28 +36,25 @@ public class Course {
 		this.code = code;
 	}
 
-	public void addAssignment(String assignName, String assignBody) {
-		assignments.add(assignName);
-		assignments.add(assignBody);
-		String content = assignName + assignBody;
-		String msgtype = "Assignment";
-		coursePublisher.getCourse(this);
-		coursePublisher.notify(msgtype, content,content);
+	public void addTask(ArrayList<String> task) {
+		tasks.add(task);
+		message = new TaskMessage();
+		message.setMessageContent(task);
+		coursePublisher.notify(message);
 	}
 
-	public void addExam(String examName, String examBody) {
-		exams.add(examName);
-		exams.add(examBody);
+	public void postGrades(ArrayList<String> grade) {
+		grades.add(grade);
+		message = new GradeMessage();
+		message.setMessageContent(grade);
+		coursePublisher.notify(message);
 	}
 
-	public void postGrades(String gradedItem, String gradeValue) {
-		grades.add(gradedItem);
-		grades.add(gradeValue);
-	}
-
-	public void postAnnouncement(String announcementContent) {
-		announcements.add(announcementContent);
-
+	public void postAnnouncement(ArrayList<String> announcement) {
+		announcements.add(announcement);
+		message = new AnnouncementMessage();
+		message.setMessageContent(announcement);
+		coursePublisher.notify(message);
 	}
 
 
