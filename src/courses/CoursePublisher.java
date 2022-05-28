@@ -15,15 +15,15 @@ public class CoursePublisher
 
     public void subscribe(String gateWay, User user){
         IGateway gg;
-        if(gateWay == "Email"){
+        if(gateWay.equals("Email")  ){
             gg = new EmailGateway();
             subscribers.put(gg, user);
 		}
-		else if(gateWay == "SMS"){
+		else if(gateWay.equals("SMS") ){
             gg = new SMSGateway();
             subscribers.put(gg, user);
 		}
-		else if(gateWay == "Both"){
+		else if(gateWay.equals("Both")){
             gg = new EmailGateway();
             subscribers.put(gg, user);
             gg = new SMSGateway();
