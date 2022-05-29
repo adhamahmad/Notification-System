@@ -15,10 +15,14 @@ public  class Message {
         for(String temp : messageContent){
             message += " "+ temp;
         }
-        messageContent.clear();
+        messageContent.remove(messageContent.size()-2);
         return message;
     }
     public void setMessageContent(ArrayList<String> messageContent) {
         this.messageContent = messageContent;
+    }
+
+    public void clear(){
+        messageContent.clear();
     }
 }

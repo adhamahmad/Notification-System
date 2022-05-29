@@ -5,6 +5,7 @@ import messages.Message;
 import messages.AnnouncementMessage;
 import messages.GradeMessage;
 import messages.TaskMessage;
+import users.TA;
 
 public class Course {
 	public CoursePublisher coursePublisher = new CoursePublisher();

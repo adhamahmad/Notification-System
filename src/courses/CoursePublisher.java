@@ -38,7 +38,10 @@ public class CoursePublisher
     {   // 3rf no3 el message 
         // hget el user for notification
         for (Map.Entry<IGateway, User> entry : subscribers.entrySet()) {
-            entry.getKey().sendMessage(entry.getValue(),message);
+            Message temp = message;
+            entry.getKey().sendMessage(entry.getValue(),temp);
+
+            
         }
     }
 }

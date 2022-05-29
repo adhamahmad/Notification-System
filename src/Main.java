@@ -11,8 +11,8 @@ public class Main{
         User Hesha = new Student(20196077);
         Hesha.setName("Hesha");
         Darsh.setCoursesInCharge(SoftwareEvo);
-        Omar.enlistInCourse("Email", SoftwareEvo, Omar);
-        Hesha.enlistInCourse("Both", SoftwareEvo, Hesha);
+        Omar.enlistInCourse("Both", SoftwareEvo, Omar);
+        Hesha.enlistInCourse("SMS", SoftwareEvo, Hesha);
         ArrayList<String> message = new ArrayList<String>();
         message.add("Task Added.");
         Darsh.pushTask(SoftwareEvo, message);

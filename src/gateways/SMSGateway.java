@@ -11,5 +11,10 @@ public class SMSGateway implements IGateway{
         placeHolders[0] = "This is a SMS message";
         message.prepareMessage(placeHolders);
         recepient.update(message);
+        placeHolders[0] = "";
+        placeHolders[1] = "";
+        placeHolders[2] = "";
+        placeHolders[3] = "";
+        placeHolders[4] = "";
     }
 }

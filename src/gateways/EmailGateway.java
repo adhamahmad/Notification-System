@@ -11,7 +11,7 @@ public class EmailGateway implements IGateway{
         placeHolders[0] = "This is an Email message";
         message.prepareMessage(placeHolders);
         recepient.update(message);
+        }
     }
 
 
-}
