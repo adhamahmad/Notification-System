@@ -1,0 +1,1739 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)https://app.codacy.com/gh/Walidic/Notificati/issues/index -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Notificati - Codacy - Issues</title>
+    <link rel="stylesheet" href="./Notificati - Codacy - Issues-Beginning_files/all.min.css">
+    <link rel="stylesheet" href="./Notificati - Codacy - Issues-Beginning_files/v4-shims.min.css">
+    <link href="./Notificati - Codacy - Issues-Beginning_files/6e3f47052e1085ffb99f75c398db9125-clear-sans.css" rel="stylesheet" type="text/css">
+    <link href="./Notificati - Codacy - Issues-Beginning_files/b322efa5358e227d991cedf2ce86759c-orkney.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./Notificati - Codacy - Issues-Beginning_files/ae717c41988b1a2fc12c4c8c08ff96c3-template.min.css">
+    <link rel="stylesheet" href="./Notificati - Codacy - Issues-Beginning_files/36150914914572197b34cdfa3da9ffe5-non-responsive.min.css">
+    <link rel="stylesheet" href="./Notificati - Codacy - Issues-Beginning_files/2a0a5badd6fa13e88887e12ef0f430c6-styleguideTobe.min.css">
+    <link rel="stylesheet" href="./Notificati - Codacy - Issues-Beginning_files/2ac19eef7ff80eba527c99eafeaffd0e-migrationCompatibility.min.css">
+    <link rel="shortcut icon" type="image/png" href="https://app.codacy.com/legacy/versioned/images/favicon.png">
+    
+      <meta property="og:image" content="/legacy/versioned/images/og.png">
+    
+    <script type="text/javascript" async="" src="./Notificati - Codacy - Issues-Beginning_files/f.txt"></script><script type="text/javascript" async="" src="./Notificati - Codacy - Issues-Beginning_files/insight.min.js.download"></script><script type="text/javascript" async="" src="./Notificati - Codacy - Issues-Beginning_files/js"></script><script src="./Notificati - Codacy - Issues-Beginning_files/fb.js.download" type="text/javascript" id="hs-ads-pixel-7370416" data-ads-portal-id="7370416" data-ads-env="prod" data-loader="hs-scriptloader" data-hsjs-portal="7370416" data-hsjs-env="prod" data-hsjs-hublet="na1"></script><script src="./Notificati - Codacy - Issues-Beginning_files/7370416.js.download" type="text/javascript" id="cookieBanner-7370416" data-cookieconsent="ignore" data-hs-ignore="true" data-loader="hs-scriptloader" data-hsjs-portal="7370416" data-hsjs-env="prod" data-hsjs-hublet="na1"></script><script src="./Notificati - Codacy - Issues-Beginning_files/7370416.js(1).download" type="text/javascript" id="hs-script-loader"></script><script src="./Notificati - Codacy - Issues-Beginning_files/pixel.js.download" async=""></script><script type="text/javascript" async="" src="./Notificati - Codacy - Issues-Beginning_files/insight.min.js.download"></script><script type="text/javascript" async="" src="./Notificati - Codacy - Issues-Beginning_files/f.txt"></script><script type="text/javascript" async="" src="./Notificati - Codacy - Issues-Beginning_files/analytics.js.download"></script><script type="text/javascript" async="" src="./Notificati - Codacy - Issues-Beginning_files/js(1)"></script><script gtm="GTM-WH3KMWB" type="text/javascript" async="" src="./Notificati - Codacy - Issues-Beginning_files/optimize.js.download"></script><script type="text/javascript" async="" src="./Notificati - Codacy - Issues-Beginning_files/analytics.js.download"></script><script type="text/javascript" async="" src="./Notificati - Codacy - Issues-Beginning_files/gtm.js.download"></script><script type="text/javascript" async="" src="./Notificati - Codacy - Issues-Beginning_files/a53cb793563c5f92959598bf8b22fe8f01ec3199"></script><script type="text/javascript" async="" src="./Notificati - Codacy - Issues-Beginning_files/7370416.js(2).download" id="hs-analytics"></script><script type="text/javascript" async="" src="./Notificati - Codacy - Issues-Beginning_files/analytics.min.js.download"></script><script src="./Notificati - Codacy - Issues-Beginning_files/30540e273ff455eb4dfdb9a839d5d651-runtime-main.44836b23.js.download"></script>
+    <script src="./Notificati - Codacy - Issues-Beginning_files/aa113a4c82a1225d7b804a7a631aa4b1-2.e4df24f8.chunk.js.download"></script>
+    
+  <meta name="keywords" content="Notificati,Code Quality,Static Analysis,Code Reviews,Code Review,Open Source,Automated Code Reviews,Java">
+  <meta name="description" content="Discover the code quality of Notificati in Java - Issues">
+  <link rel="stylesheet" href="./Notificati - Codacy - Issues-Beginning_files/0c96f5caece95abfbafcece74deb473b-commonHeader.min.css">
+  
+  <link rel="stylesheet" media="screen" href="./Notificati - Codacy - Issues-Beginning_files/bf6c14925e66edb1526b6c9489b3c042-github.css">
+  
+
+
+    <script src="./Notificati - Codacy - Issues-Beginning_files/dc5e7f18c8d36ac1d3d4753a87c98d0a-jquery.min.js.download" type="text/javascript"></script>
+    <script src="./Notificati - Codacy - Issues-Beginning_files/6008e7ce703c9940d6fcc8580b46b9d6-pluralize.js.download"></script>
+    <script src="./Notificati - Codacy - Issues-Beginning_files/4d5ea2e8cd28f4a115c0ff00e5966a9a-qamine-utils.js.download"></script>
+    
+
+  <script>
+    !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+      analytics.load("4sT1ml0BeKdR1RtrK5dSQmwxmvcUpYtL");
+
+      
+        analytics.identify(
+          "270019",
+          
+            {},
+            {
+              integrations: {
+                Intercom: {
+                  user_hash: "BE41D5C958B00825A90994C44755FABF4FE417C312040981E4B1D9E834E44D16"
+                }
+              }
+            }
+          
+        );
+      
+
+      analytics.page("Notificati - Codacy - Issues");
+    }}();
+  </script>
+
+
+    
+
+
+
+  <script src="./Notificati - Codacy - Issues-Beginning_files/launchdarkly-js-client-sdk@2"></script>
+  <script>
+    $(document).ready(function() {
+      var BASE_FLAG_USER = {
+        key: 'GUEST-USER',
+        custom: {
+          currentOrganization: 'NONE',
+          organizations: [],
+        }
+      }
+
+      var client = LDClient.initialize("61ade2ec9a5a26130485865f", BASE_FLAG_USER);
+
+      function identify() {
+        const customAttributes = BASE_FLAG_USER.custom
+
+        
+          customAttributes.currentOrganization = `gh/Walidic`
+        
+        customAttributes.organizations = ["gh/Walidic"]
+
+        var currentUser = client.getUser()
+        var newUser = {
+          key: "270019" || BASE_FLAG_USER.key,
+          email: "omar.walid123456@gmail.com",
+          custom: customAttributes,
+        }
+
+        if (
+          !currentUser ||
+          currentUser.key !== newUser.key ||
+          currentUser.custom?.currentOrganization !== newUser.custom.currentOrganization ||
+          currentUser.custom?.organizations.length !== newUser.custom.organizations.length
+        ) {
+          client.identify(newUser).then((ldFlags) => {
+            Object.keys(ldFlags).forEach(flag => {
+              if(ldFlags[flag]) {$(`[data-flag='${flag}']`).addClass("flag-enabled")}
+            });
+          })
+        }
+      }
+
+      client.on('ready', identify);
+      client.on('change', identify);
+    });
+  </script>
+
+
+  <script async="" src="./Notificati - Codacy - Issues-Beginning_files/hotjar-94583.js.download"></script><script async="" src="./Notificati - Codacy - Issues-Beginning_files/modules.7a321ecb93fde9f07226.js.download" charset="utf-8"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style><meta http-equiv="origin-trial" content="A9wkrvp9y21k30U9lU7MJMjBj4USjLrGwV+Z8zO3J3ZBH139DOnCv3XLK2Ii40S94HG1SZ/Zeg2GSHOD3wlWngYAAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjYxMjk5MTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><style>div.pulse-link{display: none !important}</style><style>#pulse-navigate{display: none}</style><script src="./Notificati - Codacy - Issues-Beginning_files/f(1).txt"></script><meta http-equiv="origin-trial" content="Azy2GzGQxPvGmQwVDdEL1jRuKSXIdSSASA06JCA6PCeaVHpFYf8Rw5/q+9adc9CrBTxfCeUwxkuDM4PWEmdqywwAAACKeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZWFkc2VydmljZXMuY29tOjQ0MyIsImZlYXR1cmUiOiJQcml2YWN5U2FuZGJveEFkc0FQSXMiLCJleHBpcnkiOjE2NjEyOTkxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><script src="./Notificati - Codacy - Issues-Beginning_files/f(2).txt"></script><script type="text/javascript" async="" src="./Notificati - Codacy - Issues-Beginning_files/1s9mPOHO.js.download"></script><script async="" src="./Notificati - Codacy - Issues-Beginning_files/js(2)"></script><meta http-equiv="origin-trial" content="A9wkrvp9y21k30U9lU7MJMjBj4USjLrGwV+Z8zO3J3ZBH139DOnCv3XLK2Ii40S94HG1SZ/Zeg2GSHOD3wlWngYAAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjYxMjk5MTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><script src="./Notificati - Codacy - Issues-Beginning_files/f(3).txt"></script></head>
+  <body data-new-gr-c-s-check-loaded="14.1062.0" data-gr-ext-installed="" class="vsc-initialized">
+    <div class="flex flex-column h-100">
+      
+
+
+      
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top" style="left: 0px;">
+  <div class="container-fluid">
+    <div id="navbar-header" class="navbar-header">
+      
+        <a id="home-navigate" href="https://app.codacy.com/app" class="navbar-brand">
+          <img src="./Notificati - Codacy - Issues-Beginning_files/codacy-white.svg" alt="Codacy, the automated code review software">
+        </a>
+      
+    </div>
+    <ul class="nav navbar-nav navbar-left">
+      
+        <li id="organization-dropdown-toggle" class="dropdown filter-search">
+          
+            <div class="btn-group bootstrap-select fit-width"><button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown" role="button" data-id="select-organization" title="Walidic"><span class="filter-option pull-left">Walidic</span>&nbsp;<span class="bs-caret"><span class="caret"></span></span></button><div class="dropdown-menu open" role="combobox"><ul class="dropdown-menu inner" role="listbox" aria-expanded="false"><li data-original-index="1" class="selected"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="true"><div data-name="gh/Walidic">
+                      <i class="fa fa-github"></i> Walidic
+                    </div><span class="fa fa-check check-mark"></span></a></li><li class="divider" data-original-index="2"></li><li data-original-index="3"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="fa fa-plus"></span> <span class="text">Add an organization</span><span class="fa fa-check check-mark"></span></a></li></ul></div><select id="select-organization" onchange="location = this.value;" class="selectpicker" title="
+                Walidic
+              " data-size="5" data-width="fit" data-show-icon="false" tabindex="-98"><option class="bs-title-option" value="">
+                Walidic
+              </option>
+              
+              
+                <option id="Walidic" selected="" value="/gh/Walidic" title="Walidic" data-content="&lt;div data-name=&quot;gh/Walidic&quot;&gt;
+                      &lt;i class=&quot;fa fa-github&quot;&gt;&lt;/i&gt; Walidic
+                    &lt;/div&gt;">
+                  Walidic
+                </option>
+              
+            <option data-divider="true">divider</option>
+            <option value="/organizations" data-icon="fa-plus" title="My repositories">Add an organization</option>
+            </select></div>
+          
+        </li>
+      
+      
+        <li id="dropdown-project-name" class="dropdown filter-search">
+          
+            
+              <a class="no-select" href="https://app.codacy.com/gh/Walidic/Notificati">
+                Notificati
+              </a>
+            
+          
+        </li>
+      
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right"><li>
+  <a id="pulse-navigate-x" href="https://www.pulse.codacy.com/using-codacy/?utm_source=codacy&amp;utm_medium=referral&amp;utm_campaign=codacy_link&amp;utm_content=app_navbar" target="_blank" style="display: flex; align-items: center; justify-content: center; background: rgb(53, 171, 178); border-radius: 1rem; margin: 1.35rem 0px; height: 1.375rem; gap: 0.25rem;margin-right:1rem; padding: 0.15rem 0.75rem;">
+    <span style="font-size: 0.75rem; color: rgb(255, 255, 255); font-weight: 600;">Learn about Pulse</span>
+  </a>
+</li>
+      
+        <li>
+          <a id="community-navigate" href="https://community.codacy.com/" target="_blank">Community</a>
+        </li>
+        <li>
+          <a id="navbar_docs" href="https://docs.codacy.com/" target="_blank">Docs</a>
+        </li>
+        
+        <li id="user-dropdown-toggle" class="dropdown" data-email="omar.walid123456@gmail.com">
+          <a href="https://app.codacy.com/gh/Walidic/Notificati/issues/index#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            
+
+
+
+
+
+
+
+    <img src="./Notificati - Codacy - Issues-Beginning_files/2ce5fc42ca2b0b3880e667eea2682536" width="30" height="30" class="img-circle profile-img" onerror="this.onError = null; this.src = &#39;/legacy/versioned/images/account/default-user-1.png&#39;;">
+
+
+            <i class="fa fa-chevron-down caret" aria-hidden="true"></i>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a id="account-navigate" href="https://app.codacy.com/account/profile">
+                <i class="fa fa-user"></i> Your Account
+              </a>
+            </li>
+            <li>
+              <a id="organizations-navigate" href="https://app.codacy.com/organizations">
+                <i class="fa fa-building"></i> Organizations
+              </a>
+            </li>
+            <li class="divider"></li>
+            
+              <li>
+                <a id="status-navigate" href="http://status.codacy.com/" target="_blank">
+                  <i class="fa fa-info-circle"></i> Status
+                </a>
+              </li>
+              <li>
+                <a id="blog-navigate" href="https://www.codacy.com/blog/" target="_blank">
+                  <i class="fa fa-newspaper-o"></i> Blog
+                </a>
+              </li>
+              <li>
+                <a id="roadmap-navigate" href="https://roadmap.codacy.com/" target="_blank">
+                  <i class="far fa-map"></i> Roadmap
+                </a>
+              </li>
+              <li>
+                <a id="terms-navigate" href="https://www.codacy.com/terms" target="_blank">
+                  <i class="fa fa-file-text-o"></i> Terms of Service
+                </a>
+              </li>
+            
+            
+              <li class="divider"></li>
+              <li>
+                
+ 
+<form action="https://app.codacy.com/logout" method="POST" id="logoutForm">
+    
+  <input type="hidden" name="csrfToken" value="6016cc65522bb9a5bbd442af0ba64222ab519764-1653758529189-8ab15ffc0f72787c387e1c34">
+  <a id="sign-out" href="https://app.codacy.com/gh/Walidic/Notificati/issues/index#" onclick="logoutForm.submit();!!Intercom&amp;&amp;Intercom(&#39;shutdown&#39;);">
+    <i class="fa fa-sign-out"></i> Sign Out
+  </a>
+
+</form>
+
+              </li>
+            
+            
+          </ul>
+        </li>
+      
+    </ul>
+  </div>
+</nav>
+
+      <div class="flex-grow-1 ">
+        
+  <ul id="navigation-sidebar" class="nav aside-nav " style="left: 0px;">
+    
+      <li role="presentation">
+        <a id="overview-navigate" href="https://app.codacy.com/organizations/gh/Walidic" class="aside-item">
+          <img src="./Notificati - Codacy - Issues-Beginning_files/arrow-back.svg"> Go back
+        </a>
+      </li>
+      <li class="divider"></li>
+    
+    <li role="presentation">
+      <a id="dashboard-navigate" href="https://app.codacy.com/gh/Walidic/Notificati/dashboard?branch=master" class="aside-item arrow">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 35" fill="#7E90B2" class="svg aside-icon replaced-svg">
+    <path d="M36.2,24.95L29.94,9.62a0.29,0.29,0,0,0-.48,0l-2.1,4.8a0.22,0.22,0,0,1-.33.08l-2-1.55a0.21,0.21,0,0,0-.31.07L21.7,19.66a0.2,0.2,0,0,1-.36,0l-2.7-5.84a0.2,0.2,0,0,0-.37,0l-2.51,8.43a0.2,0.2,0,0,1-.26.13l-2-.78v2.14L16.79,25a0.2,0.2,0,0,0,.26-0.13l1.61-5.42a0.2,0.2,0,0,1,.37,0l2.3,5a0.2,0.2,0,0,0,.36,0l3.8-8.27a0.2,0.2,0,0,1,.31-0.07l2,1.58a0.22,0.22,0,0,0,.34-0.09l1.13-2.66a0.21,0.21,0,0,1,.39,0l4,10h2.6A0.27,0.27,0,0,1,36.2,24.95Z"></path>
+    <path d="M34.11,27H13.2c-0.11,0-.08.09-0.08,0.2v1.6c0,0.11,0,.2.08,0.2H37.12a17.76,17.76,0,0,0-.32-2H34.11Z"></path>
+</svg>
+        Dashboard
+      </a>
+    </li>
+    <li role="presentation">
+      <a id="commits-navigate" href="https://app.codacy.com/gh/Walidic/Notificati/commits?bid=29369201" class="aside-item arrow 
+  
+">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 35" fill="#7E90B2" class="svg aside-icon replaced-svg">
+  <path d="M24.89,13.7a7.3,7.3,0,1,0,7.3,7.3A7.3,7.3,0,0,0,24.89,13.7Zm0,12.39a4.84,4.84,0,0,1-5-5.09,4.94,4.94,0,0,1,5-5.09A4.76,4.76,0,0,1,29.83,21,4.72,4.72,0,0,1,24.89,26.09Z"></path>
+  <path d="M32.05,19.93H36.8a0.2,0.2,0,0,1,.2.2v1.6a0.2,0.2,0,0,1-.2.2H32.05a0,0,0,0,1,0,0v-2A0,0,0,0,1,32.05,19.93Z"></path>
+  <path d="M13.2,19.93h4.75a0,0,0,0,1,0,0v2a0,0,0,0,1,0,0H13.2a0.2,0.2,0,0,1-.2-0.2v-1.6A0.2,0.2,0,0,1,13.2,19.93Z"></path>
+</svg>
+        Commits
+      </a>
+    </li>
+    <li role="presentation">
+      <a id="files-navigate" href="https://app.codacy.com/gh/Walidic/Notificati/files?branch=master" class="aside-item arrow 
+  
+">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 35" fill="#7E90B2" class="svg aside-icon replaced-svg">
+  <path d="M20.56,18V17a0.38,0.38,0,0,1,.13-0.29l2.72-2.27c0.42-.35.77-0.19,0.77,0.36v0.24a0.38,0.38,0,0,1-.13.29l-2.13,1.83a0.39,0.39,0,0,0,0,.58L24,19.62a0.38,0.38,0,0,1,.13.29v0.24c0,0.55-.35.71-0.77,0.36l-2.72-2.25A0.38,0.38,0,0,1,20.56,18Z"></path>
+  <path d="M26.37,20.51c-0.42.35-.77,0.19-0.77-0.36V19.91a0.39,0.39,0,0,1,.13-0.29l2.12-1.83a0.39,0.39,0,0,0,0-.59l-2.12-1.82a0.39,0.39,0,0,1-.13-0.29V14.85c0-.55.35-0.71,0.77-0.36l2.72,2.26a0.39,0.39,0,0,1,.13.29V18a0.39,0.39,0,0,1-.13.29Z"></path>
+  <path d="M33.51,26.85a1,1,0,0,1-1,1h-15a1,1,0,0,1-1-1V8.15a1,1,0,0,1,1-1h15a1,1,0,0,1,1,1V26.85ZM18.28,25a1,1,0,0,0,1,1H30.72a1,1,0,0,0,1-1V10a1,1,0,0,0-1-1H19.28a1,1,0,0,0-1,1V25Z"></path>
+</svg>
+        Files
+      </a>
+    </li>
+    <li role="presentation">
+      <a id="issues-navigate" href="https://app.codacy.com/gh/Walidic/Notificati/issues/index" class="aside-item arrow 
+  
+    selected
+  
+">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 35" fill="#7E90B2" class="svg aside-icon replaced-svg">
+  <path d="M26.09,21a1.14,1.14,0,0,1-.29.9,1.44,1.44,0,0,1-.94.25,1.28,1.28,0,0,1-1-.28A1.26,1.26,0,0,1,23.64,21a1.22,1.22,0,0,1,.27-0.89,1.32,1.32,0,0,1,.95-0.27,1.38,1.38,0,0,1,1,.26A1.22,1.22,0,0,1,26.09,21Zm-0.86-2.27H24.51A0.47,0.47,0,0,1,24,18.27l-0.22-6.18a0.47,0.47,0,0,1,.47-0.48h1.14a0.47,0.47,0,0,1,.47.48l-0.2,6.18A0.47,0.47,0,0,1,25.23,18.72Z"></path>
+  <path d="M25,7.5a10,10,0,1,0,10,10A10,10,0,0,0,25,7.5Zm0,18c-3.34,0-8-2.88-8-8,0-3.47,3.1-8,8-8,3.32,0,8,2.86,8,8A8.16,8.16,0,0,1,25,25.5Z"></path>
+</svg>
+        Issues
+      </a>
+    </li>
+    
+      <li role="presentation">
+        <a id="pull-requests-navigate" href="https://app.codacy.com/gh/Walidic/Notificati/pullRequests" class="aside-item arrow 
+  
+">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 35" fill="#7E90B2" class="svg aside-icon replaced-svg">
+  <path d="M30.42,16.57a3,3,0,0,1-1-1.07H19.75a3,3,0,0,1-1,1.07,2.77,2.77,0,0,1-1.48.4,2.93,2.93,0,1,1,0-5.87,2.77,2.77,0,0,1,1.48.4,3,3,0,0,1,1,1.07h9.63a3,3,0,0,1,1-1.07,2.77,2.77,0,0,1,1.48-.4,2.93,2.93,0,1,1,0,5.87A2.77,2.77,0,0,1,30.42,16.57Zm0.24-1.29a1.74,1.74,0,1,0,0-2.47A1.72,1.72,0,0,0,30.66,15.27Zm-12.19,0a1.74,1.74,0,1,0-2.47,0A1.72,1.72,0,0,0,18.47,15.27Zm0.24,13a2.77,2.77,0,0,1-1.48.4,2.93,2.93,0,1,1,0-5.87,2.77,2.77,0,0,1,1.48.4,3,3,0,0,1,1,1.07H29a1.58,1.58,0,0,0,1.47-1.47V21.5a0.13,0.13,0,0,0-.13-0.13H28.49a0.41,0.41,0,0,1-.29-0.7l3.38-3.38a0.46,0.46,0,0,1,.65,0l3.36,3.36a0.42,0.42,0,0,1-.3.72H33.52a0.16,0.16,0,0,0-.16.16v1.31a4.73,4.73,0,0,1-4.4,4.4H19.75A3,3,0,0,1,18.71,28.3ZM16,27a1.74,1.74,0,1,0,0-2.48A1.72,1.72,0,0,0,16,27Z"></path>
+</svg>
+          Pull Requests
+        </a>
+      </li>
+    
+    
+      
+        <li role="presentation">
+          <a id="security-navigate" href="https://app.codacy.com/gh/Walidic/Notificati/security" class="aside-item arrow 
+  
+">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 107 75" fill="#7E90B2" class="svg aside-icon replaced-svg">
+  <path d="M53.5 60.6c-.8 0-1.5-.2-2.2-.5-.1 0-.5-.2-1-.5s-1.3-.7-2.5-1.4-2.3-1.4-3.4-2.2c-1.2-.9-2.4-1.9-3.6-2.9-1.3-1.1-2.4-2.4-3.5-3.7-1.1-1.4-1.9-3-2.6-4.6-.7-1.8-1.1-3.7-1.1-5.6V19.4c0-1.3.5-2.6 1.5-3.5.9-.9 2.2-1.4 3.5-1.4h29.6c2.7 0 4.9 2.2 4.9 4.9v19.8c0 1.9-.4 3.8-1.1 5.6-.6 1.7-1.5 3.2-2.6 4.6-1 1.4-2.2 2.6-3.5 3.7-1.1 1-2.3 2-3.6 2.9-1.1.8-2.2 1.5-3.4 2.2s-2 1.1-2.5 1.4l-1.2.6c-.3.2-1 .4-1.7.4zm-.7-6.4l-.2.1.2-.1zm1.3 0zM40.3 21v18.2c0 1.1.2 2.2.6 3.2.4 1.1 1 2.1 1.7 3.1.8 1 1.7 2 2.6 2.8 1 .9 2 1.7 3 2.4.9.6 1.9 1.3 2.9 1.8s1.7 1 2.1 1.2l.3.2.3-.2c.4-.2 1.1-.6 2.1-1.2s2-1.2 2.9-1.8c1-.7 2-1.5 3-2.4s1.8-1.8 2.6-2.8c.7-1 1.3-2 1.7-3.1.4-1 .6-2.1.6-3.2V21H40.3z"></path>
+</svg>
+            Security
+          </a>
+        </li>
+      
+    
+    
+      <li role="presentation">
+        <a id="patterns-navigate" href="https://app.codacy.com/gh/Walidic/Notificati/patterns/list" class="aside-item arrow 
+  
+">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 35" fill="#7E90B2" class="svg aside-icon replaced-svg">
+  <path d="M17.22,14.16H13.95a0.39,0.39,0,0,1-.38-0.39V10.33a0.39,0.39,0,0,1,.38-0.39h3.28a0.39,0.39,0,0,1,.38.39v3.44A0.39,0.39,0,0,1,17.22,14.16Z"></path>
+  <path d="M34.41,14.16H19.32a0.39,0.39,0,0,1-.38-0.39V10.33a0.39,0.39,0,0,1,.38-0.39H34.41a0.39,0.39,0,0,1,.38.39v3.44A0.39,0.39,0,0,1,34.41,14.16Z"></path>
+  <path d="M17.22,20.68H13.95a0.39,0.39,0,0,1-.38-0.39V16.84a0.39,0.39,0,0,1,.38-0.39h3.28a0.39,0.39,0,0,1,.38.39v3.44A0.39,0.39,0,0,1,17.22,20.68Z"></path>
+  <path d="M34.41,20.68H19.32a0.39,0.39,0,0,1-.38-0.39V16.84a0.39,0.39,0,0,1,.38-0.39H34.41a0.39,0.39,0,0,1,.38.39v3.44A0.39,0.39,0,0,1,34.41,20.68Z"></path>
+  <path d="M17.22,27.5H13.95a0.39,0.39,0,0,1-.38-0.39V23.66a0.39,0.39,0,0,1,.38-0.39h3.28a0.39,0.39,0,0,1,.38.39V27.1A0.39,0.39,0,0,1,17.22,27.5Z"></path>
+  <path d="M34.41,27.5H19.32a0.39,0.39,0,0,1-.38-0.39V23.66a0.39,0.39,0,0,1,.38-0.39H34.41a0.39,0.39,0,0,1,.38.39V27.1A0.39,0.39,0,0,1,34.41,27.5Z"></path>
+</svg>
+          Code patterns
+        </a>
+      </li>
+    
+  
+      <li role="presentation">
+        <a id="settings-navigate" href="https://app.codacy.com/gh/Walidic/Notificati/settings" class="aside-item arrow 
+  
+">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -2 35 29" fill="#7E90B2" class="svg aside-icon replaced-svg">
+  <path d="M27.8,11l-2.64-.4a8.71,8.71,0,0,0-.51-1.32c.16-.23.42-.55.74-1s1.08-1.41,1.21-1.6a20.54,20.54,0,0,0-2.75-2.61L21.37,6a8.15,8.15,0,0,0-1.2-.5l-.48-3.24c0-.26-3.77-.32-3.81-.07-.06.46-.24,1.89-.38,3.12a8,8,0,0,0-1.21.6L11.66,3.75A18.74,18.74,0,0,0,8.89,6.61c.6.73,1.73,2.19,2.09,2.7a6.83,6.83,0,0,0-.52,1.24s-3.35.52-3.35.62v3.54a30.09,30.09,0,0,0,3.22.55,7.89,7.89,0,0,0,.6,1.34c-.15.23-1.61,2.33-1.61,2.44a29.24,29.24,0,0,0,2.62,2.72c.14,0,2.38-1.84,2.38-1.84a7.59,7.59,0,0,0,1.19.5l.38,2.48c0,.12,3.89.17,3.95-.08a24.62,24.62,0,0,0,.34-2.52,8.34,8.34,0,0,0,1.21-.45s2.08,1.62,2.18,1.62a21.5,21.5,0,0,0,2.69-2.71c0-.12-1.24-1.75-1.56-2.2a7.33,7.33,0,0,0,.52-1.23l2.86-.4A22.48,22.48,0,0,0,27.8,11ZM17.71,17.86a4.92,4.92,0,1,1,4.85-4.92A4.88,4.88,0,0,1,17.71,17.86Z"></path>
+</svg>
+          Settings
+        </a>
+      </li>
+    
+  </ul>
+
+  <div>
+    <input type="hidden" id="current-organization-id" value="99907">
+    <input type="hidden" id="current-repository-id" value="465864">
+    <input type="hidden" id="project-has-standard">
+    
+
+
+  
+    
+  
+
+  
+    
+      
+    
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+
+    
+    <div class="container-fluid h-100">
+      <div class="row h-100">
+        <div class="col-xs-12 padding-top wrapper-padding">
+          
+  <div id="heap-issueList">
+    
+
+
+
+
+
+
+
+
+
+
+
+<div class="margin-bottom">
+  <div class="flex justify-content-between align-items-center">
+    <div class="flex align-items-center">
+      <h1 class="no-margin margin-right-sm"> 
+  
+    <div id="page_selector" class="dropdown dropdown-page-selector">
+      <button id="dropdown_toogle" class="h1 dropdown-toggle no-margin" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Current Issues
+        <i class="fa fa-chevron-down fa-xs"></i>
+      </button>
+      <ul id="dropdown_menu_branches" class="dropdown-menu" aria-labelledby="dropdown_toogle">
+        
+          <li class="active">
+            <a href="https://app.codacy.com/gh/Walidic/Notificati/issues">Current Issues <span class="text-secondary"> (15) </span></a>
+          </li>
+        
+          <li>
+            <a href="https://app.codacy.com/gh/Walidic/Notificati/issues/ignored">Ignored Issues <span class="text-secondary"> (0) </span></a>
+          </li>
+        
+      </ul>
+    </div>
+  
+ </h1>
+      
+        <div> 
+  
+    <div class="btn-group bootstrap-select pull-left fit-width"><button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown" role="button" data-id="dropdown-branch-name" title="master"><span class="filter-option pull-left">master</span>&nbsp;<span class="bs-caret"><span class="caret"></span></span></button><div class="dropdown-menu open" role="combobox"><ul class="dropdown-menu inner" role="listbox" aria-expanded="false"><li data-original-index="0" class="selected"><a tabindex="0" class="" data-tokens="master" role="option" aria-disabled="false" aria-selected="true"><div id="qa-branch-master">
+
+  
+    <img width="36" height="36" alt="Grade Error" class="avatar avatar-xxs" src="./Notificati - Codacy - Issues-Beginning_files/grade-a.svg">
+  
+
+ <p class="margin-left">master</p></div><span class="fa fa-check check-mark"></span></a></li><li class="divider" data-original-index="1"></li><li data-original-index="2"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span id="qa-dropdown-select-another-branch">Select another branch for review</span><span class="fa fa-check check-mark"></span></a></li></ul></div><select id="dropdown-branch-name" class="selectpicker pull-left" onchange="location = this.value;" data-width="fit" data-size="5" tabindex="-98">
+      
+        
+          <option selected="" data-tokens="master" value="/gh/Walidic/Notificati/issues?bid=29369201" title="master" data-content="&lt;div id=&quot;qa-branch-master&quot;&gt;
+
+  
+    &lt;img width=&quot;36&quot; height=&quot;36&quot; alt=&quot;Grade Error&quot; class=&quot;avatar avatar-xxs&quot;
+      src=&quot;/legacy/versioned/images/grades/grade-a.svg&quot;&gt;
+  
+
+ &lt;p class=&quot;margin-left&quot;&gt;master&lt;/p&gt;&lt;/div&gt;">master</option>
+        
+      
+      <option data-divider="true"></option>
+      <option value="/gh/Walidic/Notificati/settings/branches" data-content="&lt;span id=&#39;qa-dropdown-select-another-branch&#39;&gt;Select another branch for review&lt;/span&gt;">
+        Select another branch for review
+      </option>
+    </select></div>
+  
+ </div>
+      
+    </div>
+    
+      <div> 
+  
+    <div class="flex align-items-center">
+      
+        <button id="tour-start" class="btn btn-link margin-right-sm">
+          <i class="fa fa-flag-o text-light-primary"></i> <span class="text-normal">Take a tour</span>
+        </button>
+        <script src="./Notificati - Codacy - Issues-Beginning_files/1c3c35e92e2b1ff1b983e81566f63726-URI.js.download" type="text/javascript"></script>
+        <script type="text/javascript">
+          var $button = $("#tour-start");
+
+          $button.click(function() {
+            if(!!window.Intercom && window.Intercom.booted) {
+              window.Intercom("startTour", 213029);
+            } else {
+              //Override retry href with the current location, to cover any params applied
+              var redirect = URI(window.location.href).addSearch("product_tour_id", "213029");
+              if(redirect) { $("#btn-intercom-retry").attr("href", redirect); }
+
+              $("#modal-intercom-blocked").modal("show");
+            }
+          });
+        </script>
+        <div id="modal-intercom-blocked" class="modal fade" tabindex="-1" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button class="close" type="button" data-dismiss="modal"><i class="fa fa-times"></i></button>
+                <h4>We noticed you’re blocking Intercom</h4>
+              </div>
+              <div class="modal-body no-padding-top">
+                <p class="no-margin-bottom">To see the tour you must whitelist <a href="https://www.intercom.com/" target="_blank" rel="noopener noreferrer">Intercom</a> on your privacy or ad blocker plugin. You can also disable
+                  the plugin just for Codacy instead.</p>
+              </div>
+              <div class="modal-footer">
+                <a id="btn-intercom-retry" class="btn btn-primary" href="https://app.codacy.com/gh/Walidic/Notificati/issues/index">Retry</a>
+                <button type="button" class="btn btn-link" data-dismiss="modal">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      <a id="btn-docs" href="https://docs.codacy.com/repositories/issues/" target="_blank" class="text-normal no-external-icon">
+        <i class="fa fa-file-o text-light-primary"></i> About this page
+      </a>
+    </div>
+  
+  
+ </div>
+    
+  </div>
+
+  
+</div>
+
+
+
+    <div class="margin-top-xs">
+      <div class="filter-panel" data-url="/gh/Walidic/Notificati/issues">
+
+        
+          
+
+  
+
+
+<div id="filter_bar" class="margin-bottom filter-container">
+  
+    
+      
+<div id="Language" class="btn-group filter-group jsFilterSearchDropdown" data-type="Language">
+  
+    <button type="button" class="btn btn-dropdown dropdown-toggle  " data-toggle="dropdown">
+      
+        All <span class="pluralize">languages</span>
+      
+    </button>
+    <ul class="dropdown-menu select-filter-list" role="menu" style="max-height: 240px; max-width: none; overflow-y: scroll;">
+      <li class="dropdown-header">Language</li>
+      
+      
+        <li class="jsSearchElement active">
+          <a href="https://app.codacy.com/gh/Walidic/Notificati/issues/index#" class="select-filter" data-category="Language">
+            All
+            
+              <span style="position: absolute; right: 20px;">15</span>
+            
+          </a>
+        </li>
+      
+      
+        <li class="jsSearchElement inactive">
+          <a href="https://app.codacy.com/gh/Walidic/Notificati/issues/index#" class="select-filter" data-category="Language" id="Java" data-filter="Java">
+            
+              <span class="jsSearchName padding-right-lg">
+                
+                  Java
+                
+              </span>
+              
+                <span style="position: absolute; right: 20px;">15</span>
+              
+            
+          </a>
+        </li>
+      
+    </ul>
+  
+</div>
+
+    
+  
+    
+      
+<div id="Category" class="btn-group filter-group jsFilterSearchDropdown" data-type="Category">
+  
+    <button type="button" class="btn btn-dropdown dropdown-toggle  " data-toggle="dropdown">
+      
+        All <span class="pluralize">categories</span>
+      
+    </button>
+    <ul class="dropdown-menu select-filter-list" role="menu" style="max-height: 240px; max-width: none; overflow-y: scroll;">
+      <li class="dropdown-header">Category</li>
+      
+      
+        <li class="jsSearchElement active">
+          <a href="https://app.codacy.com/gh/Walidic/Notificati/issues/index#" class="select-filter" data-category="Category">
+            All
+            
+              <span style="position: absolute; right: 20px;">15</span>
+            
+          </a>
+        </li>
+      
+      
+        <li class="jsSearchElement inactive">
+          <a href="https://app.codacy.com/gh/Walidic/Notificati/issues/index#" class="select-filter" data-category="Category" id="CodeStyle" data-filter="CodeStyle">
+            
+              <span class="jsSearchName padding-right-lg">
+                
+                  Code Style
+                
+              </span>
+              
+                <span style="position: absolute; right: 20px;">15</span>
+              
+            
+          </a>
+        </li>
+      
+    </ul>
+  
+</div>
+
+    
+  
+    
+      
+<div id="Level" class="btn-group filter-group jsFilterSearchDropdown" data-type="Level">
+  
+    <button type="button" class="btn btn-dropdown dropdown-toggle  " data-toggle="dropdown">
+      
+        All <span class="pluralize">levels</span>
+      
+    </button>
+    <ul class="dropdown-menu select-filter-list" role="menu" style="max-height: 240px; max-width: none; overflow-y: scroll;">
+      <li class="dropdown-header">Level</li>
+      
+      
+        <li class="jsSearchElement active">
+          <a href="https://app.codacy.com/gh/Walidic/Notificati/issues/index#" class="select-filter" data-category="Level">
+            All
+            
+              <span style="position: absolute; right: 20px;">15</span>
+            
+          </a>
+        </li>
+      
+      
+        <li class="jsSearchElement inactive">
+          <a href="https://app.codacy.com/gh/Walidic/Notificati/issues/index#" class="select-filter" data-category="Level" id="Info" data-filter="Info">
+            
+              <span class="jsSearchName padding-right-lg">
+                
+                  Minor
+                
+              </span>
+              
+                <span style="position: absolute; right: 20px;">15</span>
+              
+            
+          </a>
+        </li>
+      
+    </ul>
+  
+</div>
+
+    
+  
+    
+      
+<div id="Pattern" class="btn-group filter-group jsFilterSearchDropdown" data-type="Pattern">
+  
+    <button type="button" class="btn btn-dropdown dropdown-toggle  " data-toggle="dropdown">
+      
+        All <span class="pluralize">patterns</span>
+      
+    </button>
+    <ul class="dropdown-menu select-filter-list" role="menu" style="max-height: 240px; max-width: none; overflow-y: scroll;">
+      <li class="dropdown-header">Pattern</li>
+      
+      
+        <li class="jsSearchElement active">
+          <a href="https://app.codacy.com/gh/Walidic/Notificati/issues/index#" class="select-filter" data-category="Pattern">
+            All
+            
+              <span style="position: absolute; right: 20px;">15</span>
+            
+          </a>
+        </li>
+      
+      
+        <li class="jsSearchElement inactive">
+          <a href="https://app.codacy.com/gh/Walidic/Notificati/issues/index#" class="select-filter" data-category="Pattern" id="5288" data-filter="5288">
+            
+              <span class="jsSearchName padding-right-lg">
+                
+                  Package Case
+                
+              </span>
+              
+                <span style="position: absolute; right: 20px;">11</span>
+              
+            
+          </a>
+        </li>
+      
+        <li class="jsSearchElement inactive">
+          <a href="https://app.codacy.com/gh/Walidic/Notificati/issues/index#" class="select-filter" data-category="Pattern" id="5216" data-filter="5216">
+            
+              <span class="jsSearchName padding-right-lg">
+                
+                  Uncommented Empty Method Body
+                
+              </span>
+              
+                <span style="position: absolute; right: 20px;">2</span>
+              
+            
+          </a>
+        </li>
+      
+        <li class="jsSearchElement inactive">
+          <a href="https://app.codacy.com/gh/Walidic/Notificati/issues/index#" class="select-filter" data-category="Pattern" id="5487" data-filter="5487">
+            
+              <span class="jsSearchName padding-right-lg">
+                
+                  Method Naming Conventions
+                
+              </span>
+              
+                <span style="position: absolute; right: 20px;">1</span>
+              
+            
+          </a>
+        </li>
+      
+        <li class="jsSearchElement inactive">
+          <a href="https://app.codacy.com/gh/Walidic/Notificati/issues/index#" class="select-filter" data-category="Pattern" id="5512" data-filter="5512">
+            
+              <span class="jsSearchName padding-right-lg">
+                
+                  No Package
+                
+              </span>
+              
+                <span style="position: absolute; right: 20px;">1</span>
+              
+            
+          </a>
+        </li>
+      
+    </ul>
+  
+</div>
+
+    
+  
+    
+  
+  
+    
+
+
+  
+</div>
+
+
+  <div class="issue-container">
+    
+
+      
+
+
+
+      
+
+
+
+  
+    <div class="file-issue-container">
+      <h4 id="file-issues-71509709214" class="file-title margin-top">src/Course.java</h4>
+      <div class="margin-left-sm">
+      
+  
+  
+
+
+
+
+
+<div id="issue-1462631290889" class="panel panel-info panel-issue IssueItem margin-top-sm margin-bottom-sm">
+  <div class="panel-heading IssueHeader js-trigger-detail" data-event="issuesDashboard.expandedIssueInfo" data-branch="29369201" data-detail-branch-id="29369201" data-commit-id="642788386" data-result="1462631290889" data-user="270019" data-pullrequest="" data-project="465864" data-eventhandlerurl="/events/handler">
+    <span class="issue-severity severity-minor">
+      <img aria-hidden="true" src="./Notificati - Codacy - Issues-Beginning_files/minor.svg" alt="Minor icon">
+      <span>Minor</span>
+    </span>
+    
+      <span class="issue-category">Code Style</span>
+    
+    <h5 class="no-margin" data-hj-masked="">
+      All classes, interfaces, enums and annotations must belong to a named package
+    </h5>
+  </div>
+  <div class="panel-body FileSource 1462631290889 no-padding border-secondary-top code-issues">
+    <div class="flex border-secondary-top">
+      <a class="line-number small" href="https://app.codacy.com/gh/Walidic/Notificati/file/71509709214/issues/source?fileBranchId=29369201#l9">
+        <span>9</span>
+      </a>
+      
+      <pre class="source-code no-margin no-padding-top no-padding-bottom java hljs" style="position: relative;"><div class="code-line" data-hj-masked=""><span class="hljs-keyword"><span class="hljs-keyword">public</span></span> <span class="hljs-class"><span class="hljs-keyword"><span class="hljs-class"><span class="hljs-keyword">class</span></span></span><span class="hljs-class"> </span><span class="hljs-title"><span class="hljs-class"><span class="hljs-title">Course</span></span></span><span class="hljs-class"> </span></span>{</div><div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
+    </div>
+  </div>
+  <div class="panel-body IssueDetailContainer 1462631290889 border-secondary-top" hidden="">
+    <div class="IssueDetail"></div>
+  </div>
+</div>
+
+  
+  
+
+
+
+
+
+<div id="issue-1462631290894" class="panel panel-info panel-issue IssueItem margin-top-sm margin-bottom-sm">
+  <div class="panel-heading IssueHeader js-trigger-detail" data-event="issuesDashboard.expandedIssueInfo" data-branch="29369201" data-detail-branch-id="29369201" data-commit-id="642788386" data-result="1462631290894" data-user="270019" data-pullrequest="" data-project="465864" data-eventhandlerurl="/events/handler">
+    <span class="issue-severity severity-minor">
+      <img aria-hidden="true" src="./Notificati - Codacy - Issues-Beginning_files/minor.svg" alt="Minor icon">
+      <span>Minor</span>
+    </span>
+    
+      <span class="issue-category">Code Style</span>
+    
+    <h5 class="no-margin" data-hj-masked="">
+      The instance method name 'AddAssignment' doesn't match '[a-z][a-zA-Z0-9]*'
+    </h5>
+  </div>
+  <div class="panel-body FileSource 1462631290894 no-padding border-secondary-top code-issues">
+    <div class="flex border-secondary-top">
+      <a class="line-number small" href="https://app.codacy.com/gh/Walidic/Notificati/file/71509709214/issues/source?fileBranchId=29369201#l87">
+        <span>87</span>
+      </a>
+      
+      <pre class="source-code no-margin no-padding-top no-padding-bottom java hljs" style="position: relative;"><div class="code-line" data-hj-masked=""><span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword">public</span></span></span><span class="hljs-function"> </span><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword">void</span></span></span><span class="hljs-function"> </span><span class="hljs-title"><span class="hljs-function"><span class="hljs-title">AddAssignment</span></span></span><span class="hljs-params"><span class="hljs-function"><span class="hljs-params">(String assignName, String assignBody)</span></span></span><span class="hljs-function"> </span></span>{</div><div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
+    </div>
+  </div>
+  <div class="panel-body IssueDetailContainer 1462631290894 border-secondary-top" hidden="">
+    <div class="IssueDetail"></div>
+  </div>
+</div>
+
+  
+
+      </div>
+    </div>
+  
+    <div class="file-issue-container">
+      <h4 id="file-issues-71509709205" class="file-title margin-top">src/Gateways/EmailGateway.java</h4>
+      <div class="margin-left-sm">
+      
+  
+  
+
+
+
+
+
+<div id="issue-1462631290883" class="panel panel-info panel-issue IssueItem margin-top-sm margin-bottom-sm">
+  <div class="panel-heading IssueHeader js-trigger-detail" data-event="issuesDashboard.expandedIssueInfo" data-branch="29369201" data-detail-branch-id="29369201" data-commit-id="642788386" data-result="1462631290883" data-user="270019" data-pullrequest="" data-project="465864" data-eventhandlerurl="/events/handler">
+    <span class="issue-severity severity-minor">
+      <img aria-hidden="true" src="./Notificati - Codacy - Issues-Beginning_files/minor.svg" alt="Minor icon">
+      <span>Minor</span>
+    </span>
+    
+      <span class="issue-category">Code Style</span>
+    
+    <h5 class="no-margin" data-hj-masked="">
+      Package name contains upper case characters
+    </h5>
+  </div>
+  <div class="panel-body FileSource 1462631290883 no-padding border-secondary-top code-issues">
+    <div class="flex border-secondary-top">
+      <a class="line-number small" href="https://app.codacy.com/gh/Walidic/Notificati/file/71509709205/issues/source?fileBranchId=29369201#l1">
+        <span>1</span>
+      </a>
+      
+      <pre class="source-code no-margin no-padding-top no-padding-bottom java hljs" style="position: relative;"><div class="code-line" data-hj-masked=""><span class="hljs-keyword"><span class="hljs-keyword">package</span></span> Gateways;</div><div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
+    </div>
+  </div>
+  <div class="panel-body IssueDetailContainer 1462631290883 border-secondary-top" hidden="">
+    <div class="IssueDetail"></div>
+  </div>
+</div>
+
+  
+
+      </div>
+    </div>
+  
+    <div class="file-issue-container">
+      <h4 id="file-issues-71509709212" class="file-title margin-top">src/Gateways/SMSGateway.java</h4>
+      <div class="margin-left-sm">
+      
+  
+  
+
+
+
+
+
+<div id="issue-1462631290884" class="panel panel-info panel-issue IssueItem margin-top-sm margin-bottom-sm">
+  <div class="panel-heading IssueHeader js-trigger-detail" data-event="issuesDashboard.expandedIssueInfo" data-branch="29369201" data-detail-branch-id="29369201" data-commit-id="642788386" data-result="1462631290884" data-user="270019" data-pullrequest="" data-project="465864" data-eventhandlerurl="/events/handler">
+    <span class="issue-severity severity-minor">
+      <img aria-hidden="true" src="./Notificati - Codacy - Issues-Beginning_files/minor.svg" alt="Minor icon">
+      <span>Minor</span>
+    </span>
+    
+      <span class="issue-category">Code Style</span>
+    
+    <h5 class="no-margin" data-hj-masked="">
+      Package name contains upper case characters
+    </h5>
+  </div>
+  <div class="panel-body FileSource 1462631290884 no-padding border-secondary-top code-issues">
+    <div class="flex border-secondary-top">
+      <a class="line-number small" href="https://app.codacy.com/gh/Walidic/Notificati/file/71509709212/issues/source?fileBranchId=29369201#l1">
+        <span>1</span>
+      </a>
+      
+      <pre class="source-code no-margin no-padding-top no-padding-bottom java hljs" style="position: relative;"><div class="code-line" data-hj-masked=""><span class="hljs-keyword"><span class="hljs-keyword">package</span></span> Gateways;</div><div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
+    </div>
+  </div>
+  <div class="panel-body IssueDetailContainer 1462631290884 border-secondary-top" hidden="">
+    <div class="IssueDetail"></div>
+  </div>
+</div>
+
+  
+
+      </div>
+    </div>
+  
+    <div class="file-issue-container">
+      <h4 id="file-issues-71509709210" class="file-title margin-top">src/Messages/DailyNewsEmailMessage.java</h4>
+      <div class="margin-left-sm">
+      
+  
+  
+
+
+
+
+
+<div id="issue-1462631290895" class="panel panel-info panel-issue IssueItem margin-top-sm margin-bottom-sm">
+  <div class="panel-heading IssueHeader js-trigger-detail" data-event="issuesDashboard.expandedIssueInfo" data-branch="29369201" data-detail-branch-id="29369201" data-commit-id="642788386" data-result="1462631290895" data-user="270019" data-pullrequest="" data-project="465864" data-eventhandlerurl="/events/handler">
+    <span class="issue-severity severity-minor">
+      <img aria-hidden="true" src="./Notificati - Codacy - Issues-Beginning_files/minor.svg" alt="Minor icon">
+      <span>Minor</span>
+    </span>
+    
+      <span class="issue-category">Code Style</span>
+    
+    <h5 class="no-margin" data-hj-masked="">
+      Package name contains upper case characters
+    </h5>
+  </div>
+  <div class="panel-body FileSource 1462631290895 no-padding border-secondary-top code-issues">
+    <div class="flex border-secondary-top">
+      <a class="line-number small" href="https://app.codacy.com/gh/Walidic/Notificati/file/71509709210/issues/source?fileBranchId=29369201#l1">
+        <span>1</span>
+      </a>
+      
+      <pre class="source-code no-margin no-padding-top no-padding-bottom java hljs" style="position: relative;"><div class="code-line" data-hj-masked=""><span class="hljs-keyword"><span class="hljs-keyword">package</span></span> Messages;</div><div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
+    </div>
+  </div>
+  <div class="panel-body IssueDetailContainer 1462631290895 border-secondary-top" hidden="">
+    <div class="IssueDetail"></div>
+  </div>
+</div>
+
+  
+
+      </div>
+    </div>
+  
+    <div class="file-issue-container">
+      <h4 id="file-issues-71509709208" class="file-title margin-top">src/Messages/DailyNewsMobileMessage.java</h4>
+      <div class="margin-left-sm">
+      
+  
+  
+
+
+
+
+
+<div id="issue-1462631290892" class="panel panel-info panel-issue IssueItem margin-top-sm margin-bottom-sm">
+  <div class="panel-heading IssueHeader js-trigger-detail" data-event="issuesDashboard.expandedIssueInfo" data-branch="29369201" data-detail-branch-id="29369201" data-commit-id="642788386" data-result="1462631290892" data-user="270019" data-pullrequest="" data-project="465864" data-eventhandlerurl="/events/handler">
+    <span class="issue-severity severity-minor">
+      <img aria-hidden="true" src="./Notificati - Codacy - Issues-Beginning_files/minor.svg" alt="Minor icon">
+      <span>Minor</span>
+    </span>
+    
+      <span class="issue-category">Code Style</span>
+    
+    <h5 class="no-margin" data-hj-masked="">
+      Package name contains upper case characters
+    </h5>
+  </div>
+  <div class="panel-body FileSource 1462631290892 no-padding border-secondary-top code-issues">
+    <div class="flex border-secondary-top">
+      <a class="line-number small" href="https://app.codacy.com/gh/Walidic/Notificati/file/71509709208/issues/source?fileBranchId=29369201#l1">
+        <span>1</span>
+      </a>
+      
+      <pre class="source-code no-margin no-padding-top no-padding-bottom java hljs" style="position: relative;"><div class="code-line" data-hj-masked=""><span class="hljs-keyword"><span class="hljs-keyword">package</span></span> Messages;</div><div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
+    </div>
+  </div>
+  <div class="panel-body IssueDetailContainer 1462631290892 border-secondary-top" hidden="">
+    <div class="IssueDetail"></div>
+  </div>
+</div>
+
+  
+
+      </div>
+    </div>
+  
+    <div class="file-issue-container">
+      <h4 id="file-issues-71509709211" class="file-title margin-top">src/Messages/GradesAnnouncementEmailMessage.java</h4>
+      <div class="margin-left-sm">
+      
+  
+  
+
+
+
+
+
+<div id="issue-1462631290887" class="panel panel-info panel-issue IssueItem margin-top-sm margin-bottom-sm">
+  <div class="panel-heading IssueHeader js-trigger-detail" data-event="issuesDashboard.expandedIssueInfo" data-branch="29369201" data-detail-branch-id="29369201" data-commit-id="642788386" data-result="1462631290887" data-user="270019" data-pullrequest="" data-project="465864" data-eventhandlerurl="/events/handler">
+    <span class="issue-severity severity-minor">
+      <img aria-hidden="true" src="./Notificati - Codacy - Issues-Beginning_files/minor.svg" alt="Minor icon">
+      <span>Minor</span>
+    </span>
+    
+      <span class="issue-category">Code Style</span>
+    
+    <h5 class="no-margin" data-hj-masked="">
+      Package name contains upper case characters
+    </h5>
+  </div>
+  <div class="panel-body FileSource 1462631290887 no-padding border-secondary-top code-issues">
+    <div class="flex border-secondary-top">
+      <a class="line-number small" href="https://app.codacy.com/gh/Walidic/Notificati/file/71509709211/issues/source?fileBranchId=29369201#l1">
+        <span>1</span>
+      </a>
+      
+      <pre class="source-code no-margin no-padding-top no-padding-bottom java hljs" style="position: relative;"><div class="code-line" data-hj-masked=""><span class="hljs-keyword"><span class="hljs-keyword">package</span></span> Messages;</div><div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
+    </div>
+  </div>
+  <div class="panel-body IssueDetailContainer 1462631290887 border-secondary-top" hidden="">
+    <div class="IssueDetail"></div>
+  </div>
+</div>
+
+  
+
+      </div>
+    </div>
+  
+    <div class="file-issue-container">
+      <h4 id="file-issues-71509709213" class="file-title margin-top">src/Messages/GradesAnnouncementMobileMessage.java</h4>
+      <div class="margin-left-sm">
+      
+  
+  
+
+
+
+
+
+<div id="issue-1462631290890" class="panel panel-info panel-issue IssueItem margin-top-sm margin-bottom-sm">
+  <div class="panel-heading IssueHeader js-trigger-detail" data-event="issuesDashboard.expandedIssueInfo" data-branch="29369201" data-detail-branch-id="29369201" data-commit-id="642788386" data-result="1462631290890" data-user="270019" data-pullrequest="" data-project="465864" data-eventhandlerurl="/events/handler">
+    <span class="issue-severity severity-minor">
+      <img aria-hidden="true" src="./Notificati - Codacy - Issues-Beginning_files/minor.svg" alt="Minor icon">
+      <span>Minor</span>
+    </span>
+    
+      <span class="issue-category">Code Style</span>
+    
+    <h5 class="no-margin" data-hj-masked="">
+      Package name contains upper case characters
+    </h5>
+  </div>
+  <div class="panel-body FileSource 1462631290890 no-padding border-secondary-top code-issues">
+    <div class="flex border-secondary-top">
+      <a class="line-number small" href="https://app.codacy.com/gh/Walidic/Notificati/file/71509709213/issues/source?fileBranchId=29369201#l1">
+        <span>1</span>
+      </a>
+      
+      <pre class="source-code no-margin no-padding-top no-padding-bottom java hljs" style="position: relative;"><div class="code-line" data-hj-masked=""><span class="hljs-keyword"><span class="hljs-keyword">package</span></span> Messages;</div><div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
+    </div>
+  </div>
+  <div class="panel-body IssueDetailContainer 1462631290890 border-secondary-top" hidden="">
+    <div class="IssueDetail"></div>
+  </div>
+</div>
+
+  
+
+      </div>
+    </div>
+  
+    <div class="file-issue-container">
+      <h4 id="file-issues-71509709207" class="file-title margin-top">src/Messages/TaskAddedEmailMessage.java</h4>
+      <div class="margin-left-sm">
+      
+  
+  
+
+
+
+
+
+<div id="issue-1462631290882" class="panel panel-info panel-issue IssueItem margin-top-sm margin-bottom-sm">
+  <div class="panel-heading IssueHeader js-trigger-detail" data-event="issuesDashboard.expandedIssueInfo" data-branch="29369201" data-detail-branch-id="29369201" data-commit-id="642788386" data-result="1462631290882" data-user="270019" data-pullrequest="" data-project="465864" data-eventhandlerurl="/events/handler">
+    <span class="issue-severity severity-minor">
+      <img aria-hidden="true" src="./Notificati - Codacy - Issues-Beginning_files/minor.svg" alt="Minor icon">
+      <span>Minor</span>
+    </span>
+    
+      <span class="issue-category">Code Style</span>
+    
+    <h5 class="no-margin" data-hj-masked="">
+      Package name contains upper case characters
+    </h5>
+  </div>
+  <div class="panel-body FileSource 1462631290882 no-padding border-secondary-top code-issues">
+    <div class="flex border-secondary-top">
+      <a class="line-number small" href="https://app.codacy.com/gh/Walidic/Notificati/file/71509709207/issues/source?fileBranchId=29369201#l1">
+        <span>1</span>
+      </a>
+      
+      <pre class="source-code no-margin no-padding-top no-padding-bottom java hljs" style="position: relative;"><div class="code-line" data-hj-masked=""><span class="hljs-keyword"><span class="hljs-keyword">package</span></span> Messages;</div><div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
+    </div>
+  </div>
+  <div class="panel-body IssueDetailContainer 1462631290882 border-secondary-top" hidden="">
+    <div class="IssueDetail"></div>
+  </div>
+</div>
+
+  
+  
+
+
+
+
+
+<div id="issue-1462631290896" class="panel panel-info panel-issue IssueItem margin-top-sm margin-bottom-sm">
+  <div class="panel-heading IssueHeader js-trigger-detail" data-event="issuesDashboard.expandedIssueInfo" data-branch="29369201" data-detail-branch-id="29369201" data-commit-id="642788386" data-result="1462631290896" data-user="270019" data-pullrequest="" data-project="465864" data-eventhandlerurl="/events/handler">
+    <span class="issue-severity severity-minor">
+      <img aria-hidden="true" src="./Notificati - Codacy - Issues-Beginning_files/minor.svg" alt="Minor icon">
+      <span>Minor</span>
+    </span>
+    
+      <span class="issue-category">Code Style</span>
+    
+    <h5 class="no-margin" data-hj-masked="">
+      Document empty method body
+    </h5>
+  </div>
+  <div class="panel-body FileSource 1462631290896 no-padding border-secondary-top code-issues">
+    <div class="flex border-secondary-top">
+      <a class="line-number small" href="https://app.codacy.com/gh/Walidic/Notificati/file/71509709207/issues/source?fileBranchId=29369201#l12">
+        <span>12</span>
+      </a>
+      
+      <pre class="source-code no-margin no-padding-top no-padding-bottom java hljs" style="position: relative;"><div class="code-line" data-hj-masked=""><span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword">public</span></span></span><span class="hljs-function"> </span><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword">void</span></span></span><span class="hljs-function"> </span><span class="hljs-title"><span class="hljs-function"><span class="hljs-title">addTeamDescription</span></span></span><span class="hljs-params"><span class="hljs-function"><span class="hljs-params">()</span></span></span><span class="hljs-function"> </span></span>{</div><div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
+    </div>
+  </div>
+  <div class="panel-body IssueDetailContainer 1462631290896 border-secondary-top" hidden="">
+    <div class="IssueDetail"></div>
+  </div>
+</div>
+
+  
+
+      </div>
+    </div>
+  
+    <div class="file-issue-container">
+      <h4 id="file-issues-71509709201" class="file-title margin-top">src/Messages/TaskAddedMobileMessage.java</h4>
+      <div class="margin-left-sm">
+      
+  
+  
+
+
+
+
+
+<div id="issue-1462631290888" class="panel panel-info panel-issue IssueItem margin-top-sm margin-bottom-sm">
+  <div class="panel-heading IssueHeader js-trigger-detail" data-event="issuesDashboard.expandedIssueInfo" data-branch="29369201" data-detail-branch-id="29369201" data-commit-id="642788386" data-result="1462631290888" data-user="270019" data-pullrequest="" data-project="465864" data-eventhandlerurl="/events/handler">
+    <span class="issue-severity severity-minor">
+      <img aria-hidden="true" src="./Notificati - Codacy - Issues-Beginning_files/minor.svg" alt="Minor icon">
+      <span>Minor</span>
+    </span>
+    
+      <span class="issue-category">Code Style</span>
+    
+    <h5 class="no-margin" data-hj-masked="">
+      Package name contains upper case characters
+    </h5>
+  </div>
+  <div class="panel-body FileSource 1462631290888 no-padding border-secondary-top code-issues">
+    <div class="flex border-secondary-top">
+      <a class="line-number small" href="https://app.codacy.com/gh/Walidic/Notificati/file/71509709201/issues/source?fileBranchId=29369201#l1">
+        <span>1</span>
+      </a>
+      
+      <pre class="source-code no-margin no-padding-top no-padding-bottom java hljs" style="position: relative;"><div class="code-line" data-hj-masked=""><span class="hljs-keyword"><span class="hljs-keyword">package</span></span> Messages;</div><div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
+    </div>
+  </div>
+  <div class="panel-body IssueDetailContainer 1462631290888 border-secondary-top" hidden="">
+    <div class="IssueDetail"></div>
+  </div>
+</div>
+
+  
+  
+
+
+
+
+
+<div id="issue-1462631290893" class="panel panel-info panel-issue IssueItem margin-top-sm margin-bottom-sm">
+  <div class="panel-heading IssueHeader js-trigger-detail" data-event="issuesDashboard.expandedIssueInfo" data-branch="29369201" data-detail-branch-id="29369201" data-commit-id="642788386" data-result="1462631290893" data-user="270019" data-pullrequest="" data-project="465864" data-eventhandlerurl="/events/handler">
+    <span class="issue-severity severity-minor">
+      <img aria-hidden="true" src="./Notificati - Codacy - Issues-Beginning_files/minor.svg" alt="Minor icon">
+      <span>Minor</span>
+    </span>
+    
+      <span class="issue-category">Code Style</span>
+    
+    <h5 class="no-margin" data-hj-masked="">
+      Document empty method body
+    </h5>
+  </div>
+  <div class="panel-body FileSource 1462631290893 no-padding border-secondary-top code-issues">
+    <div class="flex border-secondary-top">
+      <a class="line-number small" href="https://app.codacy.com/gh/Walidic/Notificati/file/71509709201/issues/source?fileBranchId=29369201#l11">
+        <span>11</span>
+      </a>
+      
+      <pre class="source-code no-margin no-padding-top no-padding-bottom java hljs" style="position: relative;"><div class="code-line" data-hj-masked=""><span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword">public</span></span></span><span class="hljs-function"> </span><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword">void</span></span></span><span class="hljs-function"> </span><span class="hljs-title"><span class="hljs-function"><span class="hljs-title">addTeamDescription</span></span></span><span class="hljs-params"><span class="hljs-function"><span class="hljs-params">()</span></span></span><span class="hljs-function"> </span></span>{</div><div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
+    </div>
+  </div>
+  <div class="panel-body IssueDetailContainer 1462631290893 border-secondary-top" hidden="">
+    <div class="IssueDetail"></div>
+  </div>
+</div>
+
+  
+
+      </div>
+    </div>
+  
+    <div class="file-issue-container">
+      <h4 id="file-issues-71509709206" class="file-title margin-top">src/Users/Professor.java</h4>
+      <div class="margin-left-sm">
+      
+  
+  
+
+
+
+
+
+<div id="issue-1462631290885" class="panel panel-info panel-issue IssueItem margin-top-sm margin-bottom-sm">
+  <div class="panel-heading IssueHeader js-trigger-detail" data-event="issuesDashboard.expandedIssueInfo" data-branch="29369201" data-detail-branch-id="29369201" data-commit-id="642788386" data-result="1462631290885" data-user="270019" data-pullrequest="" data-project="465864" data-eventhandlerurl="/events/handler">
+    <span class="issue-severity severity-minor">
+      <img aria-hidden="true" src="./Notificati - Codacy - Issues-Beginning_files/minor.svg" alt="Minor icon">
+      <span>Minor</span>
+    </span>
+    
+      <span class="issue-category">Code Style</span>
+    
+    <h5 class="no-margin" data-hj-masked="">
+      Package name contains upper case characters
+    </h5>
+  </div>
+  <div class="panel-body FileSource 1462631290885 no-padding border-secondary-top code-issues">
+    <div class="flex border-secondary-top">
+      <a class="line-number small" href="https://app.codacy.com/gh/Walidic/Notificati/file/71509709206/issues/source?fileBranchId=29369201#l1">
+        <span>1</span>
+      </a>
+      
+      <pre class="source-code no-margin no-padding-top no-padding-bottom java hljs" style="position: relative;"><div class="code-line" data-hj-masked=""><span class="hljs-keyword"><span class="hljs-keyword">package</span></span> Users;</div><div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
+    </div>
+  </div>
+  <div class="panel-body IssueDetailContainer 1462631290885 border-secondary-top" hidden="">
+    <div class="IssueDetail"></div>
+  </div>
+</div>
+
+  
+
+      </div>
+    </div>
+  
+    <div class="file-issue-container">
+      <h4 id="file-issues-71509709203" class="file-title margin-top">src/Users/Student.java</h4>
+      <div class="margin-left-sm">
+      
+  
+  
+
+
+
+
+
+<div id="issue-1462631290891" class="panel panel-info panel-issue IssueItem margin-top-sm margin-bottom-sm">
+  <div class="panel-heading IssueHeader js-trigger-detail" data-event="issuesDashboard.expandedIssueInfo" data-branch="29369201" data-detail-branch-id="29369201" data-commit-id="642788386" data-result="1462631290891" data-user="270019" data-pullrequest="" data-project="465864" data-eventhandlerurl="/events/handler">
+    <span class="issue-severity severity-minor">
+      <img aria-hidden="true" src="./Notificati - Codacy - Issues-Beginning_files/minor.svg" alt="Minor icon">
+      <span>Minor</span>
+    </span>
+    
+      <span class="issue-category">Code Style</span>
+    
+    <h5 class="no-margin" data-hj-masked="">
+      Package name contains upper case characters
+    </h5>
+  </div>
+  <div class="panel-body FileSource 1462631290891 no-padding border-secondary-top code-issues">
+    <div class="flex border-secondary-top">
+      <a class="line-number small" href="https://app.codacy.com/gh/Walidic/Notificati/file/71509709203/issues/source?fileBranchId=29369201#l1">
+        <span>1</span>
+      </a>
+      
+      <pre class="source-code no-margin no-padding-top no-padding-bottom java hljs" style="position: relative;"><div class="code-line" data-hj-masked=""><span class="hljs-keyword"><span class="hljs-keyword">package</span></span> Users;</div><div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
+    </div>
+  </div>
+  <div class="panel-body IssueDetailContainer 1462631290891 border-secondary-top" hidden="">
+    <div class="IssueDetail"></div>
+  </div>
+</div>
+
+  
+
+      </div>
+    </div>
+  
+    <div class="file-issue-container">
+      <h4 id="file-issues-71509709209" class="file-title margin-top">src/Users/TA.java</h4>
+      <div class="margin-left-sm">
+      
+  
+  
+
+
+
+
+
+<div id="issue-1462631290886" class="panel panel-info panel-issue IssueItem margin-top-sm margin-bottom-sm">
+  <div class="panel-heading IssueHeader js-trigger-detail" data-event="issuesDashboard.expandedIssueInfo" data-branch="29369201" data-detail-branch-id="29369201" data-commit-id="642788386" data-result="1462631290886" data-user="270019" data-pullrequest="" data-project="465864" data-eventhandlerurl="/events/handler">
+    <span class="issue-severity severity-minor">
+      <img aria-hidden="true" src="./Notificati - Codacy - Issues-Beginning_files/minor.svg" alt="Minor icon">
+      <span>Minor</span>
+    </span>
+    
+      <span class="issue-category">Code Style</span>
+    
+    <h5 class="no-margin" data-hj-masked="">
+      Package name contains upper case characters
+    </h5>
+  </div>
+  <div class="panel-body FileSource 1462631290886 no-padding border-secondary-top code-issues">
+    <div class="flex border-secondary-top">
+      <a class="line-number small" href="https://app.codacy.com/gh/Walidic/Notificati/file/71509709209/issues/source?fileBranchId=29369201#l1">
+        <span>1</span>
+      </a>
+      
+      <pre class="source-code no-margin no-padding-top no-padding-bottom java hljs" style="position: relative;"><div class="code-line" data-hj-masked=""><span class="hljs-keyword"><span class="hljs-keyword">package</span></span> Users;</div><div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
+    </div>
+  </div>
+  <div class="panel-body IssueDetailContainer 1462631290886 border-secondary-top" hidden="">
+    <div class="IssueDetail"></div>
+  </div>
+</div>
+
+  
+
+      </div>
+    </div>
+  
+
+
+
+  <script src="./Notificati - Codacy - Issues-Beginning_files/214a98ac1860d1bcd00db1fb3541aed5-commonmark.min.js.download"></script>
+  <script src="./Notificati - Codacy - Issues-Beginning_files/ed514d1cbc126dd974191d7407a80f08-issues.js.download"></script>
+
+  <script>
+    $(document).ready(function () {
+      $(".source-code").each(function (i, e) {
+        hljs.highlightBlock(e)
+      });
+
+      var issues = Issues.getInstance();
+      issues.bindShowDetails(
+        "/issue/-1/-4/_detail?fileBranchId=-2&commitId=-3&forceRedirect=false&context=IssuesList",
+        "/issue/-2/_lines?projectId=465864&commitId=-1",
+        true);
+    });
+  </script>
+
+
+
+      <nav class="pull-left">
+        <ul class="pager">
+          <li class="previous disabled">
+            <a href="https://app.codacy.com/gh/Walidic/Notificati/issues?step=-20">
+              <i class="fa fa-angle-left"></i> Previous
+            </a>
+          </li>
+          <li class="next disabled">
+            <a href="https://app.codacy.com/gh/Walidic/Notificati/issues?step=20">
+              Next <i class="fa fa-angle-right"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    
+  </div>
+
+        
+      </div>
+    </div>
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+      </div>
+    </div>
+
+    <div id="feedback-toast" class="side-toast" hidden="">
+      <h5 class="no-margin-top" hidden=""></h5>
+      <p></p>
+      <i class="fa fa-times"></i>
+    </div>
+
+    
+      
+    
+
+    <script src="./Notificati - Codacy - Issues-Beginning_files/75339ccfd351203d76e759a4da08fce2-main.min.js.download"></script>
+    <script src="./Notificati - Codacy - Issues-Beginning_files/d82a3f268d08d93c4fdba6beb7c3bd71-jquery.timeago.js.download" type="text/javascript"></script>
+    <script src="./Notificati - Codacy - Issues-Beginning_files/543feb1ecaf06ea516f8cec5f9f3f279-underscore-min.js.download" type="text/javascript"></script>
+    <script src="./Notificati - Codacy - Issues-Beginning_files/1f91008d9fb39b45db0978805499ad9c-clipboard.min.js.download"></script>
+    <script src="./Notificati - Codacy - Issues-Beginning_files/893f870eaf4600c848b1f29c66e13917-js.cookie.js.download"></script>
+    <script src="./Notificati - Codacy - Issues-Beginning_files/518da6d68ff65c39b0330f3244bab14e-eventsHandler.js.download" type="text/javascript"></script>
+    <script src="./Notificati - Codacy - Issues-Beginning_files/33dc83cb3c23daa44de88cda6adb16d8-loadingInit.js.download"></script>
+    <script src="./Notificati - Codacy - Issues-Beginning_files/1fd63bd297573341288a97dadaf1fa55-track.js.download"></script>
+    <script>
+      $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+
+        // https://stackoverflow.com/a/12021231
+        // https://getbootstrap.com/docs/4.0/components/pagination/#disabled-and-active-states
+        $("body").on("click", ".pager .disabled a, .breadcrumb .active a, .breadcrumb .active ~ li a, a.btn[disabled], li.disabled a", function(e) {
+          e.preventDefault();
+        });
+
+        var $selectDropdownOrg = $("#select-organization");
+        if($selectDropdownOrg.length) {
+          var $organizationMenuDropdown = $($selectDropdownOrg.data("selectpicker").$menu);
+
+          $organizationMenuDropdown.find("li").on("click", function() {
+            $selectDropdownOrg.change();
+          });
+
+          var $navigation = $(".aside-nav, .navbar-fixed-top, .fixed-aside, .fixed-container");
+          $(window).on("scroll", function () {
+            $navigation.css("left", -$(window).scrollLeft());
+          });
+        }
+      });
+      var utils = QamineUtils.getInstance();
+      utils.prettyTime();
+      utils.dropdownBranchSearch();
+      utils.clipboard();
+      utils.bindAdminActions();
+    </script>
+    
+
+
+    
+  <script src="./Notificati - Codacy - Issues-Beginning_files/98af67fa31f943e38926c9e3f6dfa9e4-project-detail.js.download"></script>
+  <script>
+    $(document).ready(function() {
+      var projectDetail = ProjectDetail.getInstance();
+      projectDetail.disableMenu();
+      projectDetail.bindRetryAnalysis("465864",
+        "/project/_retry");
+      projectDetail.bindCustomRetryAnalysis();
+    });
+  </script>
+  
+  <script src="./Notificati - Codacy - Issues-Beginning_files/6ea89a03be6edf4122fc419ad847c025-highlight.pack.min.js.download"></script>
+  <script>
+    $(document).ready(function() {
+      $(".source-code").each(function(i, e) {
+        hljs.highlightBlock(e)
+      });
+
+      var utils = QamineUtils.getInstance();
+      utils.prettyTime();
+      utils.pluralize();
+    });
+  </script>
+  
+  <script src="./Notificati - Codacy - Issues-Beginning_files/1dd6b8bebd8db906d393b7c211b17952-dropdown-search.js.download"></script>
+  <script src="./Notificati - Codacy - Issues-Beginning_files/a70d3ca4c5421db4f856582beacf534b-filter.js.download"></script>
+  <script>
+    $(document).ready(function() {
+      var filter = Filter.getInstance();
+      filter.bind();
+
+      var dropdownSearch = new DropdownSearch();
+      dropdownSearch.bindSearch(".jsFilterSearchDropdown");
+    });
+  </script>
+
+
+
+  
+
+
+
+
+<iframe id="_hjSafeContext_96551461" src="./Notificati - Codacy - Issues-Beginning_files/saved_resource.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe>
+<script type="text/javascript" id="">!function(a,b){if(!a.rdt){var c=a.rdt=function(){c.sendEvent?c.sendEvent.apply(c,arguments):c.callQueue.push(arguments)};c.callQueue=[];a=b.createElement("script");a.src="https://www.redditstatic.com/ads/pixel.js";a.async=!0;b=b.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)}}(window,document);rdt("init","t2_31z8tryb");rdt("track","PageVisit");</script>
+
+
+<iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="./Notificati - Codacy - Issues-Beginning_files/box-4924254a9ce4dc9b959b6e4a9b662d60.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe><iframe id="intercom-frame" style="position: absolute !important; opacity: 0 !important; width: 1px !important; height: 1px !important; top: 0 !important; left: 0 !important; border: none !important; display: block !important; z-index: -1 !important; pointer-events: none;" aria-hidden="true" tabindex="-1" title="Intercom" src="./Notificati - Codacy - Issues-Beginning_files/saved_resource(1).html"></iframe><div class="intercom-lightweight-app"><div class="intercom-lightweight-app-launcher intercom-launcher" role="button" tabindex="0" aria-label="Open Intercom Messenger" aria-live="polite"><div class="intercom-lightweight-app-launcher-icon intercom-lightweight-app-launcher-icon-open"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 32"><path d="M28 32s-4.714-1.855-8.527-3.34H3.437C1.54 28.66 0 27.026 0 25.013V3.644C0 1.633 1.54 0 3.437 0h21.125c1.898 0 3.437 1.632 3.437 3.645v18.404H28V32zm-4.139-11.982a.88.88 0 00-1.292-.105c-.03.026-3.015 2.681-8.57 2.681-5.486 0-8.517-2.636-8.571-2.684a.88.88 0 00-1.29.107 1.01 1.01 0 00-.219.708.992.992 0 00.318.664c.142.128 3.537 3.15 9.762 3.15 6.226 0 9.621-3.022 9.763-3.15a.992.992 0 00.317-.664 1.01 1.01 0 00-.218-.707z"></path></svg></div><div class="intercom-lightweight-app-launcher-icon intercom-lightweight-app-launcher-icon-minimize"><svg viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M.116 4.884l1.768-1.768L8 9.232l6.116-6.116 1.768 1.768L8 12.768.116 4.884z"></path></svg></div></div><style id="intercom-lightweight-app-style" type="text/css">
+  @keyframes intercom-lightweight-app-launcher {
+    from {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes intercom-lightweight-app-gradient {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes intercom-lightweight-app-messenger {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .intercom-lightweight-app {
+    position: fixed;
+    z-index: 2147483001;
+    width: 0;
+    height: 0;
+    font-family: intercom-font, "Helvetica Neue", "Apple Color Emoji", Helvetica, Arial, sans-serif;
+  }
+
+  .intercom-lightweight-app-gradient {
+    position: fixed;
+    z-index: 2147483002;
+    width: 500px;
+    height: 500px;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+    background: radial-gradient(
+      ellipse at bottom right,
+      rgba(29, 39, 54, 0.16) 0%,
+      rgba(29, 39, 54, 0) 72%);
+    animation: intercom-lightweight-app-gradient 200ms ease-out;
+  }
+
+  .intercom-lightweight-app-launcher {
+    position: fixed;
+    z-index: 2147483003;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #242c33;
+    cursor: pointer;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 32px 0 rgba(0, 0, 0, 0.16);
+    animation: intercom-lightweight-app-launcher 250ms ease;
+  }
+
+  .intercom-lightweight-app-launcher:focus {
+    outline: none;
+    
+  }
+
+  .intercom-lightweight-app-launcher-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    transition: transform 100ms linear, opacity 80ms linear;
+  }
+
+  .intercom-lightweight-app-launcher-icon-open {
+    
+        opacity: 1;
+        transform: rotate(0deg) scale(1);
+      
+  }
+
+  .intercom-lightweight-app-launcher-icon-open svg {
+    width: 28px;
+    height: 32px;
+  }
+
+  .intercom-lightweight-app-launcher-icon-open svg path {
+    fill: rgb(255, 255, 255);
+  }
+
+  .intercom-lightweight-app-launcher-icon-self-serve {
+    
+        opacity: 1;
+        transform: rotate(0deg) scale(1);
+      
+  }
+
+  .intercom-lightweight-app-launcher-icon-self-serve svg {
+    height: 56px;
+  }
+
+  .intercom-lightweight-app-launcher-icon-self-serve svg path {
+    fill: rgb(255, 255, 255);
+  }
+
+  .intercom-lightweight-app-launcher-custom-icon-open {
+    max-height: 36px;
+    max-width: 36px;
+    
+        opacity: 1;
+        transform: rotate(0deg) scale(1);
+      
+  }
+
+  .intercom-lightweight-app-launcher-icon-minimize {
+    
+        opacity: 0;
+        transform: rotate(-60deg) scale(0);
+      
+  }
+
+  .intercom-lightweight-app-launcher-icon-minimize svg {
+    width: 16px;
+  }
+
+  .intercom-lightweight-app-launcher-icon-minimize svg path {
+    fill: rgb(255, 255, 255);
+  }
+
+  .intercom-lightweight-app-messenger {
+    position: fixed;
+    z-index: 2147483003;
+    overflow: hidden;
+    background-color: white;
+    animation: intercom-lightweight-app-messenger 250ms ease-out;
+    
+        width: 376px;
+        height: calc(100% - 120px);
+        max-height: 704px;
+        min-height: 250px;
+        right: 20px;
+        bottom: 100px;
+        box-shadow: 0 5px 40px rgba(0,0,0,0.16);
+        border-radius: 8px;
+      
+  }
+
+  .intercom-lightweight-app-messenger-header {
+    height: 75px;
+    background: linear-gradient(
+      135deg,
+      rgb(36, 44, 51) 0%,
+      rgb(0, 0, 0) 100%
+    );
+  }
+
+  @media print {
+    .intercom-lightweight-app {
+      display: none;
+    }
+  }
+</style></div><iframe src="./Notificati - Codacy - Issues-Beginning_files/Beq5YUTp.html" width="0" height="0" style="display: none;"></iframe></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
