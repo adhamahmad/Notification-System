@@ -15,8 +15,19 @@ public  class Message {
         for(String temp : messageContent){
             message += " "+ temp;
         }
-        messageContent.remove(messageContent.size()-2);
+        ArrayList<String> oldMessage = new ArrayList<String>();
+        for(String temp : messageContent){
+            if(temp.equals(".")){
+                oldMessage.add(temp);
+                break;
+            }
+            oldMessage.add(temp);
+        }
+        this.setMessageContent(oldMessage);
         return message;
+    }
+    public ArrayList<String> getMessage(){
+        return messageContent;
     }
     public void setMessageContent(ArrayList<String> messageContent) {
         this.messageContent = messageContent;
