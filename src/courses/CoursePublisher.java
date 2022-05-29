@@ -7,6 +7,7 @@ import gateways.EmailGateway;
 import gateways.IGateway;
 import gateways.SMSGateway;
 import messages.Message;
+import messages.TaskMessage;
 import users.User;
 public class CoursePublisher 
 {
@@ -34,9 +35,8 @@ public class CoursePublisher
         this.course = course;
     }
 
-    public void notify(Message message)
-    {   // 3rf no3 el message 
-        // hget el user for notification
+    public void notify(Message message){
+        
         for (Map.Entry<IGateway, User> entry : subscribers.entrySet()) {
             entry.getKey().sendMessage(entry.getValue(),message);
         }
